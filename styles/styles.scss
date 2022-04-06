@@ -1,0 +1,15 @@
+@import "navbar";
+@import "welcome";
+@import "menu";
+@import "direccion";
+@import "contactos";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+  //background-image: url(../images/pin.png);
+  //background-size: cover;
+  //background-position: left;
+}

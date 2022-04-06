@@ -1,0 +1,43 @@
+@import "colors";
+@import "typography";
+
+.direccion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    
+    &__title{
+        grid-column: span 3;
+        color: $light-blue;
+        font-family: $ff-main;
+    
+    }
+    &__pin{
+        margin-top: -3rem;
+        margin-left: -7rem;
+        
+
+    }
+    &__lista{
+        margin-left: -7em;
+        grid-column: span 2;
+        color: $dark-gray;
+
+        font-family: $ff-text;
+        font-style: normal;
+
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 2;
+        text-align: left;
+
+        
+        padding-right: 2.625rem;
+        padding-left: 2.625rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+}

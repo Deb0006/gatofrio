@@ -1,0 +1,51 @@
+@import "colors";
+@import "typography";
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 0.8125rem;
+    padding: 0.8125rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    background-image: url(../images/Vector-12.png), url(../images/Vector-13.png);
+    background-repeat: no-repeat;
+    background-size: 16rem 36rem, 17.3rem 32.75rem;
+    background-position: -9rem 4rem, 17rem 12.5rem;
+
+    top: -30px;
+    
+    &__title{
+        grid-column: span 2;
+        padding-bottom: 1rem;
+        color: $light-blue;
+        font-family: $ff-main;
+        //color: red;
+    }
+    
+    &__containers{
+        background: #FFFFFF;
+        border: 1px solid #CDCDCD;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding-bottom: 0.5rem;
+        
+        &--images{
+            display:block;
+            margin: 0 auto;
+            width: 9.375rem;
+            height: 7.188rem;
+            left: 1.188rem;
+            top: 24.875rem;
+        }
+
+        &--name{
+            font-family: $ff-main;
+            color: $text-gray;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.3125rem;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import "colors";
+@import "typography";
+
+.contactos{
+    background-color: $dark-blue;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 0.5rem;
+
+
+    height: 6.625rem;
+    left: 0rem;
+    top: 9049.375rem;
+
+    &__title{
+        grid-column: span 5;
+        color: white;   
+
+        font-family: $ff-main;
+        font-size: 1.45rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 122%;
+        
+        text-align: center;
+        line-height: 23px;      
+    }
+    &__links{
+        display:block;
+        margin: 0 auto;
+        
+    }
+
+}

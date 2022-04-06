@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+.navbar {
+  background: repeating-linear-gradient(0deg, #145364 0px, #145364 33px, #fd703b 33px, #fd703b 66px, #fe9b3d 66px, #fe9b3d 100px);
+  height: 6rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 0.3rem;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  place-items: center;
+}
+
+.navbar__logo {
+  grid-column: span 3;
+  color: #007d97;
+  text-decoration: none;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+}
+
+.navbar__options {
+  color: #fd703b;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px black;
+}
+
+.welcome {
+  display: -ms-grid;
+  display: grid;
+  padding: 0.8125rem;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  color: red;
+}
+
+.welcome__message h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-bottom: 1rem;
+  line-height: 120%;
+  color: #fd703b;
+  font-size: 1.95rem;
+}
+
+.welcome__message h1 span {
+  color: #00c1ec;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.welcome__message a {
+  font-size: 0.9rem;
+  font-family: "Nunito Sans", sans-serif;
+  color: #6c6c6c;
+}
+
+.welcome__image {
+  padding-top: 0.2rem;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap: 0.8125rem;
+  padding: 0.8125rem;
+  padding-bottom: 2rem;
+  margin: 0;
+  background-image: url(../images/Vector-12.png), url(../images/Vector-13.png);
+  background-repeat: no-repeat;
+  background-size: 16rem 36rem, 17.3rem 32.75rem;
+  background-position: -9rem 4rem, 17rem 12.5rem;
+  top: -30px;
+}
+
+.menu__title {
+  grid-column: span 2;
+  padding-bottom: 1rem;
+  color: #00c1ec;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.menu__containers {
+  background: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  padding-bottom: 0.5rem;
+}
+
+.menu__containers--images {
+  display: block;
+  margin: 0 auto;
+  width: 9.375rem;
+  height: 7.188rem;
+  left: 1.188rem;
+  top: 24.875rem;
+}
+
+.menu__containers--name {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #6c6c6c;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+}
+
+.direccion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.direccion__title {
+  grid-column: span 3;
+  color: #00c1ec;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.direccion__pin {
+  margin-top: -3rem;
+  margin-left: -7rem;
+}
+
+.direccion__lista {
+  margin-left: -7em;
+  grid-column: span 2;
+  color: #444444;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 2;
+  text-align: left;
+  padding-right: 2.625rem;
+  padding-left: 2.625rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.contactos {
+  background-color: #145364;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding-top: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 0.5rem;
+  height: 6.625rem;
+  left: 0rem;
+  top: 9049.375rem;
+}
+
+.contactos__title {
+  grid-column: span 5;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.45rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 122%;
+  text-align: center;
+  line-height: 23px;
+}
+
+.contactos__links {
+  display: block;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=styles.css.map */
