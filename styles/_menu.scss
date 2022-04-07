@@ -12,8 +12,8 @@
     background-repeat: no-repeat;
     background-size: 16rem 36rem, 17.3rem 32.75rem;
     background-position: -9rem 4rem, 17rem 12.5rem;
-
-    top: -30px;
+ 
+    //top: -30px;
     
     &__title{
         grid-column: span 2;
@@ -24,19 +24,24 @@
     }
     
     &__containers{
-        background: #FFFFFF;
+        background-color: #FFFFFF;
         border: 1px solid #CDCDCD;
         box-sizing: border-box;
         border-radius: 15px;
         padding-bottom: 0.5rem;
+
         
         &--images{
             display:block;
             margin: 0 auto;
+            //width: 70%;
+            //height: 50%;
+            //width: 34.375vw;
+            //height: 32.188vw;
             width: 9.375rem;
             height: 7.188rem;
-            left: 1.188rem;
-            top: 24.875rem;
+            //left: 1.188rem;
+            //top: 24.875rem;
         }
 
         &--name{
@@ -46,6 +51,7 @@
             font-weight: 400;
             font-size: 1.125rem;
             line-height: 1.3125rem;
+            
         }
     }
 }
