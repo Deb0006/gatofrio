@@ -6,16 +6,15 @@
   background: repeating-linear-gradient(
     0deg,
     $dark-blue 0px,
-    $dark-blue 33px,
-    $orange 33px,
-    $orange 66px,
-    $light-orange 66px,
-    $light-orange 100px
+    $dark-blue 40px,
+    $orange 40px,
+    $orange 80px,
+    $light-orange 80px,
+    $light-orange 120px
   );
-  height: 6rem;
+  height: 7.5em;
   display: grid;
-  gap: 0.3rem;
-  padding: 0.3rem;
+  //padding: 0.1rem;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   place-items: center;
@@ -23,21 +22,41 @@
 
   &__logo {
     grid-column: span 3;
-    color: $blue-title;
-    text-decoration: none;
     padding-top: 0.5rem;
-    font-size: 2rem;
-    font-family: $ff-logo;
-    font-weight: 400;
+    margin: 0 auto;
     
+    &--name{
+      color: $blue-title;
+      font-size: 2rem;
+      font-family: $ff-logo;
+      font-weight: 400;
+      text-decoration: none;
+      position: absolute;
+      z-index: 1;
+      text-shadow: 0px 20px 40px rgb(44, 44, 44);
+  
+      // background-image: url(../images/logo-shade.svg);
+      // background-repeat: no-repeat;
+      // background-size: 100%;
+      // background-position: 100% 100%;
+      
+    }
+    &--shade{
+      position: relative;
+      margin: 0 auto;
+      height: 2.5rem;
+      width: auto;
+      border: 1px solid #CDCDCD;
+    }
+
   }
   &__options {
     color: $orange;
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     text-decoration: none;
     font-family: $ff-main;
     font-weight: 400;
-
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 1px 3px rgb(15, 15, 15);
+    
     }
 }

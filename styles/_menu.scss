@@ -1,26 +1,64 @@
 @import "colors";
 @import "typography";
 .menu{
+//   background-image: url(../images/Vector-12.png), url(../images/Vector-13.png);
+//   background-repeat: no-repeat;
+//   background-size: 16rem 36rem, 17.3rem 32.75rem;
+//   background-position: -9rem 4rem, 17rem 12.5rem;
+ 
     display: grid;
+    gap: 3vw;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-    gap: 0.8125rem;
-    padding: 0.8125rem;
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto;
+    //padding: 10%;
     padding-bottom: 2rem;
-    margin: 0;
-    background-image: url(../images/Vector-12.png), url(../images/Vector-13.png);
-    background-repeat: no-repeat;
-    background-size: 16rem 36rem, 17.3rem 32.75rem;
-    background-position: -9rem 4rem, 17rem 12.5rem;
- 
-    //top: -30px;
     
+    @media (min-width: 43em){ //700px
+        width: 90%;
+        //margin: 4rem 5rem;
+        //background-color: rgb(177, 201, 212);
+    }
+
+    @media (min-width: 62em){ //992px
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        gap: 1.375rem;
+        //margin: 4rem, 10.375rem;
+        //background-color: rgb(165, 144, 187);
+    }
+
+    @media (min-width: 83em){ //1392
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 73.563rem;
+        gap: 1.813rem;
+        //margin: 4rem 10.375rem;
+        //background-color: bisque;
+    }
+        
     &__title{
         grid-column: span 2;
         padding-bottom: 1rem;
         color: $light-blue;
         font-family: $ff-main;
-        //color: red;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+       
+        @media (min-width: 43.75em){ //700px
+            font-size: 2rem;
+        }
+        @media (min-width: 62em){ //992px
+            grid-column: span 3;
+            font-size: 2.5rem;
+        }
+        @media (min-width: 83em){ //1392
+            grid-column: span 3;
+            font-size: 3rem;
+        }
     }
     
     &__containers{
@@ -28,30 +66,39 @@
         border: 1px solid #CDCDCD;
         box-sizing: border-box;
         border-radius: 15px;
-        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.813rem;
 
         
         &--images{
             display:block;
             margin: 0 auto;
-            //width: 70%;
-            //height: 50%;
-            //width: 34.375vw;
-            //height: 32.188vw;
-            width: 9.375rem;
-            height: 7.188rem;
-            //left: 1.188rem;
-            //top: 24.875rem;
+            width: 80%;
+            height: auto;
+            
         }
 
         &--name{
-            font-family: $ff-main;
             color: $text-gray;
+            font-family: $ff-main;
             font-style: normal;
             font-weight: 400;
-            font-size: 1.125rem;
-            line-height: 1.3125rem;
+            font-size: 1.3rem;
             
+            
+            @media (min-width: 43.75em){ //700px
+                font-size: 1.5rem;
+                padding-bottom: 1.563rem;
+            }
+            @media (min-width: 62em){ //992px
+                font-size: 1.875rem;   
+            }
+            @media (min-width: 83em){ //1392
+                font-size: 2.25rem;
+            }
         }
     }
+
+    
+
 }

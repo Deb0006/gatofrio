@@ -13,11 +13,13 @@
         grid-column: span 3;
         color: $light-blue;
         font-family: $ff-main;
+        text-transform: uppercase;
     
     }
     &__pin{
         margin-top: -3rem;
         margin-left: -7rem;
+        z-index: -1;
         
 
     }
@@ -36,7 +38,7 @@
 
         
         padding-right: 2.625rem;
-        padding-left: 2.625rem;
+        padding-left: 2rem;
         padding-top: 1rem;
         padding-bottom: 2rem;
     }

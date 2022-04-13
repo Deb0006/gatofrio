@@ -2,33 +2,70 @@
 @import "typography";
 
 .welcome {
-  display: grid;
-  padding: 0.8125rem;
-  padding-top: 3.5rem;
-  padding-bottom: 2rem;
-  grid-template-columns: 1fr 1fr;
-  
+  display: flex;
+  flex-wrap: wrap;
+  //align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  width: 95%;
+  margin: 5% auto;
 
   &__message {
-    h1 {
-      font-family: $ff-main;
-      padding-bottom: 1rem;
-      line-height: 120%;
-      color: $orange;
-      font-size: 1.95rem;
+      // flex: 1;
+      //border: 1px solid #ffffff;
+      justify-content: center;
+      padding-bottom: 5%;
+      padding-top: 5%;
+      position: relative;
+      z-index: 1;
+      left: 10px;
       
+     h1 {
+      font-family: $ff-logo;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 7.22vw;  //1.45rem
+      
+      color: $orange;
+  
       span {
         color: $light-blue;
-        font-family: $ff-main;
+        font-family: $ff-logo;
+        //display: block;
       }
     }
     a {
       font-size: 0.9rem;
       font-family: $ff-text;
+      font-weight: 300;
       color: $text-gray;
+      
     }
   }
+
   &__image {
-    padding-top: 0.2rem;
+    // position: relative;
+    // z-index: -1;
+    // left: -10px;
+    
+    // flex: 1;
+    // width: 40%;
+    // flex: 1;
+    // border: 1px solid #3890d8;
+    // height: auto;
+    
+    &--hero-img{
+      
+    display: block;
+    margin: 0 auto;
+    
+    width: 40.556vw;
+    left: auto;
+    }
   }
 }
+
+
+// .welcome > * {
+//   flex: 1;
+// }

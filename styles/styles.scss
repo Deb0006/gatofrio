@@ -9,7 +9,22 @@
   margin: 0;
   padding: 0;
   
-  //background-image: url(../images/pin.png);
-  //background-size: cover;
-  //background-position: left;
+//   background-image: url(../images/Vector-12.png), url(../images/Vector-13.png);
+//   background-repeat: no-repeat;
+//   background-size: 16rem 36rem, 17.3rem 32.75rem;
+//   background-position: -9rem 4rem, 17rem 12.5rem;
+}
+.wrapper{
+  background-image:url(../images/Vector12.svg), url(../images/Vector13.svg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: -100% 45%, 190% 55%;
+ 
+ 
+ 
+  // &__background{
+  //   position: relative;
+  //   z-index: -1;
+
+  // }
 }
