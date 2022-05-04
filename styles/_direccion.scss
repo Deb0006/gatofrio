@@ -2,30 +2,27 @@
 @import "typography";
 
 .direccion{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 73.563rem;
 
     
     &__title{
-        grid-column: span 3;
         color: $light-blue;
         font-family: $ff-main;
         text-transform: uppercase;
+        z-index: 1;
     
     }
     &__pin{
         margin-top: -3rem;
         margin-left: -7rem;
-        z-index: -1;
         
 
     }
     &__lista{
-        margin-left: -7em;
-        grid-column: span 2;
         color: $dark-gray;
 
         font-family: $ff-text;
@@ -37,9 +34,6 @@
         text-align: left;
 
         
-        padding-right: 2.625rem;
-        padding-left: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
+        
     }
 }

@@ -6,9 +6,22 @@
   flex-wrap: wrap;
   //align-items: center;
   justify-content: center;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
   width: 95%;
-  margin: 5% auto;
+  margin: 0 auto;
+
+  @media (min-width: 43.75em){ //700px
+      width: 95%;
+  }
+
+  @media (min-width: 62em){ //992px
+      width: 85%;
+  }
+
+  @media (min-width: 83em){ //1392
+      width: 80rem;
+  }
 
   &__message {
       // flex: 1;
@@ -38,22 +51,27 @@
       font-size: 0.9rem;
       font-family: $ff-text;
       font-weight: 300;
-      color: $text-gray;
-      
+      color: $text-gray; 
     }
+
+    @media (min-width: 43.75em){ //700px
+      a{font-size: 1.3rem;}
+      }
+  
+      @media (min-width: 62em){ //992px
+         h1{ font-size: 5.5vw; }
+         a{font-size: 1.5rem;       } 
+      }
+  
+      @media (min-width: 83em){ //1392
+        h1{ font-size: 5.7rem; } 
+        a{font-size: 2rem;}
+      }
   }
 
+
   &__image {
-    // position: relative;
-    // z-index: -1;
-    // left: -10px;
-    
-    // flex: 1;
-    // width: 40%;
-    // flex: 1;
-    // border: 1px solid #3890d8;
-    // height: auto;
-    
+        
     &--hero-img{
       
     display: block;
@@ -61,6 +79,18 @@
     
     width: 40.556vw;
     left: auto;
+
+    @media (min-width: 43.75em){ //700px
+    width: 35vw;
+    }
+
+    @media (min-width: 62em){ //992px
+        width: 25vw;
+    }
+
+    @media (min-width: 83em){ //1392
+        width: 25rem;
+    }
     }
   }
 }
