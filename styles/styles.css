@@ -106,7 +106,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
   padding-bottom: 1rem;
   width: 95%;
   margin: 0 auto;
@@ -136,8 +136,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 5%;
-  padding-top: 5%;
+  padding-bottom: 5% 0%;
   position: relative;
   z-index: 1;
   left: 10px;
@@ -147,7 +146,7 @@
   font-family: "Luckiest Guy", cursive;
   font-style: normal;
   font-weight: 400;
-  font-size: 7.22vw;
+  font-size: 7.9vw;
   color: #fd703b;
 }
 
@@ -157,13 +156,16 @@
 }
 
 .welcome__message a {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
   color: #6c6c6c;
 }
 
 @media (min-width: 43.75em) {
+  .welcome__message h1 {
+    font-size: 7.22vw;
+  }
   .welcome__message a {
     font-size: 1.3rem;
   }
@@ -365,7 +367,7 @@
   background-image: url("../images/pin2.png");
   background-repeat: no-repeat;
   background-size: 15rem;
-  background-position: center left -5rem;
+  background-position: center left -7rem;
 }
 
 @media (max-width: 18.75em) {
@@ -377,7 +379,7 @@
 @media (min-width: 43.75em) {
   .addresses {
     background-size: 20rem;
-    background-position: bottom -2rem left -5rem;
+    background-position: bottom -2rem left -6rem;
   }
 }
 
@@ -443,7 +445,7 @@
   line-height: 2;
   text-align: left;
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   height: auto;
 }
 

@@ -8,14 +8,14 @@
     background-image: url("../images/pin2.png");
     background-repeat: no-repeat;
     background-size: 15rem;
-    background-position: center left -5rem;
+    background-position: center left -7rem;
 
     @media (max-width: 18.75em){ //Less than 280px 
         background-position: bottom 1rem left -5rem;      
     }
     @media (min-width: 43.75em){ //700px
         background-size: 20rem;
-        background-position: bottom -2rem left -5rem;      
+        background-position: bottom -2rem left -6rem;      
     }
     @media (min-width: 62em){ //992px
         background-size: 22rem;
@@ -66,7 +66,7 @@
             line-height: 2;
             text-align: left;
             margin: 0 auto;
-            width: 70%;
+            width: 80%;
             height: auto;
             @media (max-width: 18.75em){ //Less than 280px 
                 line-height: 1.5; 

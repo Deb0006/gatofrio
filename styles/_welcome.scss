@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   //align-items: center;
   justify-content: center;
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
   padding-bottom: 1rem;
   width: 95%;
   margin: 0 auto;
@@ -29,8 +29,7 @@
       // flex: 1;
       //border: 1px solid #ffffff;
       justify-content: center;
-      padding-bottom: 5%;
-      padding-top: 5%;
+      padding-bottom: 5% 0%;
       position: relative;
       z-index: 1;
       left: 10px;
@@ -39,7 +38,7 @@
       font-family: $ff-logo;
       font-style: normal;
       font-weight: 400;
-      font-size: 7.22vw;  //1.45rem
+      font-size: 7.9vw;  //1.45rem
       
       color: $orange;
   
@@ -50,13 +49,14 @@
       }
     }
     a {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-family: $ff-text;
       font-weight: 300;
       color: $text-gray; 
     }
 
     @media (min-width: 43.75em){ //700px
+      h1{ font-size: 7.22vw; }
       a{font-size: 1.3rem;}
       }
   
