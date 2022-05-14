@@ -12,7 +12,7 @@
     text-align: center;
     width: 95%;
     margin: 0 auto;
-    //padding: 10%;
+    margin-top: 2rem;
     
     @media (max-width: 18.75em){ //280px 
         grid-template-columns:1fr;
@@ -22,24 +22,18 @@
 
     @media (min-width: 43.75em){ //700px
         width: 85%;
-        //margin: 4rem 5rem;
-        //background-color: rgb(177, 201, 212);
     }
 
     @media (min-width: 62em){ //992px
         grid-template-columns: 1fr 1fr 1fr;
         width: 80%;
         gap: 1.375rem;
-        //margin: 4rem, 10.375rem;
-        //background-color: rgb(165, 144, 187);
     }
 
     @media (min-width: 83em){ //1392
         grid-template-columns: 1fr 1fr 1fr;
         width: 73.563rem;
         gap: 1.813rem;
-        //margin: 4rem 10.375rem;
-        //background-color: bisque;
     }
         
     &__title{
@@ -70,7 +64,7 @@
     
     &__containers{
         background-color: #ffffff;
-        border: 1px solid #CDCDCD;
+        border: 1px solid #EDEDED;
         box-sizing: border-box;
         border-radius: 15px;
         padding-top: 0.5rem;

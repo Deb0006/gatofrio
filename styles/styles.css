@@ -60,6 +60,12 @@
   z-index: 1;
 }
 
+@media (min-width: 43.75em) {
+  .navbar__logo--name {
+    font-size: 2.5rem;
+  }
+}
+
 @media (min-width: 62em) {
   .navbar__logo--name {
     font-size: 3rem;
@@ -73,7 +79,20 @@
   width: 9.563rem;
   height: 3rem;
   left: -4px;
-  top: 20px;
+  top: 15px;
+}
+
+@media (min-width: 43.75em) {
+  .navbar__logo--shade {
+    top: 17px;
+  }
+}
+
+@media (min-width: 62em) {
+  .navbar__logo--shade {
+    width: 12.563rem;
+    top: 20px;
+  }
 }
 
 .navbar__options {
@@ -82,7 +101,6 @@
   text-decoration: none;
   font-family: "Passion One", cursive;
   font-weight: 400;
-  text-shadow: 0px 1px 3px #0f0f0f;
 }
 
 @media (min-width: 62em) {
@@ -103,13 +121,22 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
+  padding-right: 0.2rem;
   width: 95%;
   margin: 0 auto;
+  margin: 1rem 0.6rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(205, 205, 205, 0.09);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
 }
 
 @media (min-width: 43.75em) {
@@ -126,8 +153,6 @@
 
 @media (min-width: 83em) {
   .welcome {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
     width: 80rem;
   }
 }
@@ -223,6 +248,7 @@
   text-align: center;
   width: 95%;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 @media (max-width: 18.75em) {
@@ -297,7 +323,7 @@
 
 .menu__containers {
   background-color: #ffffff;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #EDEDED;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 15px;
@@ -471,6 +497,7 @@
 
 @media (min-width: 83em) {
   .addresses__container--lista {
+    padding: 2rem 0;
     font-size: 1.75rem;
   }
 }
