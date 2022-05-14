@@ -27,7 +27,19 @@
         line-height: 122%;
         
         text-align: center;
-        line-height: 23px;      
+        line-height: 23px; 
+        @media (max-width: 18.75em){ //280px 
+                
+        }
+        @media (min-width: 43.75em){ //700px
+            font-size: 2rem;
+        }
+        @media (min-width: 62em){ //992px
+            font-size: 2.5rem;
+        }
+        @media (min-width: 83em){ //1392
+            font-size: 3rem;
+        }     
     }
     &__links{
         display:block;

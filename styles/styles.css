@@ -60,6 +60,12 @@
   z-index: 1;
 }
 
+@media (min-width: 62em) {
+  .navbar__logo--name {
+    font-size: 3rem;
+  }
+}
+
 .navbar__logo--shade {
   position: relative;
   -ms-flex-item-align: end;
@@ -120,6 +126,8 @@
 
 @media (min-width: 83em) {
   .welcome {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     width: 80rem;
   }
 }
@@ -163,7 +171,7 @@
 
 @media (min-width: 62em) {
   .welcome__message h1 {
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
   .welcome__message a {
     font-size: 1.5rem;
@@ -172,7 +180,7 @@
 
 @media (min-width: 83em) {
   .welcome__message h1 {
-    font-size: 5.7rem;
+    font-size: 5.5rem;
   }
   .welcome__message a {
     font-size: 2rem;
@@ -213,7 +221,6 @@
   text-align: center;
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 2rem;
 }
 
 @media (max-width: 18.75em) {
@@ -352,35 +359,82 @@
   }
 }
 
-.direccion {
+.addresses {
+  margin: 0 auto;
+  padding: 4rem 0;
+  background-image: url("../images/pin2.png");
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  background-position: center left -5rem;
+}
+
+@media (max-width: 18.75em) {
+  .addresses {
+    background-position: bottom 1rem left -5rem;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .addresses {
+    background-size: 20rem;
+    background-position: bottom -2rem left -5rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .addresses {
+    background-size: 22rem;
+  }
+}
+
+@media (min-width: 83em) {
+  .addresses {
+    background-size: 25rem;
+    background-position: bottom left;
+    max-width: 90rem;
+  }
+}
+
+.addresses__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
   width: 80%;
   max-width: 73.563rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  text-align: center;
+  height: auto;
 }
 
-.direccion__title {
+.addresses__container--title {
   color: #00c1ec;
   font-family: "Passion One", cursive;
   text-transform: uppercase;
   width: 100%;
-  height: 50px;
+  padding-bottom: 1rem;
 }
 
-.direccion__pin {
-  margin-top: -1rem;
-  margin-left: -5rem;
-  width: auto;
-  height: 70%;
-  position: relative;
+@media (min-width: 43.75em) {
+  .addresses__container--title {
+    font-size: 2rem;
+  }
 }
 
-.direccion__lista {
+@media (min-width: 62em) {
+  .addresses__container--title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 83em) {
+  .addresses__container--title {
+    font-size: 3rem;
+  }
+}
+
+.addresses__container--lista {
   color: #444444;
   font-family: "Nunito Sans", sans-serif;
   font-style: normal;
@@ -388,8 +442,35 @@
   font-size: 0.875rem;
   line-height: 2;
   text-align: left;
+  margin: 0 auto;
   width: 70%;
-  position: absolute;
+  height: auto;
+}
+
+@media (max-width: 18.75em) {
+  .addresses__container--lista {
+    line-height: 1.5;
+    width: 90%;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .addresses__container--lista {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .addresses__container--lista {
+    font-size: 1.5rem;
+    width: 75%;
+  }
+}
+
+@media (min-width: 83em) {
+  .addresses__container--lista {
+    font-size: 1.75rem;
+  }
 }
 
 .contactos {
@@ -418,6 +499,24 @@
   line-height: 122%;
   text-align: center;
   line-height: 23px;
+}
+
+@media (min-width: 43.75em) {
+  .contactos__title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .contactos__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 83em) {
+  .contactos__title {
+    font-size: 3rem;
+  }
 }
 
 .contactos__links {

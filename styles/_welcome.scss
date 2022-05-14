@@ -20,6 +20,8 @@
   }
 
   @media (min-width: 83em){ //1392
+    padding-top: 5rem;
+    padding-bottom: 5rem; 
       width: 80rem;
   }
 
@@ -59,12 +61,12 @@
       }
   
       @media (min-width: 62em){ //992px
-         h1{ font-size: 5.5vw; }
+         h1{ font-size: 5vw; }
          a{font-size: 1.5rem;       } 
       }
   
       @media (min-width: 83em){ //1392
-        h1{ font-size: 5.7rem; } 
+        h1{ font-size: 5.5rem; } 
         a{font-size: 2rem;}
       }
   }
