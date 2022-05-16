@@ -121,22 +121,13 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
-  padding-right: 0.2rem;
   width: 95%;
   margin: 0 auto;
-  margin: 1rem 0.6rem;
-  background: #FFFFFF;
-  border: 1px solid rgba(205, 205, 205, 0.09);
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
 }
 
 @media (min-width: 43.75em) {
@@ -147,12 +138,14 @@
 
 @media (min-width: 62em) {
   .welcome {
+    padding: 5rem 0;
     width: 85%;
   }
 }
 
 @media (min-width: 83em) {
   .welcome {
+    padding: 7rem 0;
     width: 80rem;
   }
 }
@@ -176,7 +169,7 @@
 }
 
 .welcome__message h1 span {
-  color: #00c1ec;
+  color: #07A3D3;
   font-family: "Luckiest Guy", cursive;
 }
 
@@ -286,13 +279,12 @@
 
 .menu__title {
   grid-column: span 2;
-  padding-bottom: 1rem;
-  color: #00c1ec;
-  font-family: "Passion One", cursive;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  padding: 1rem 0;
+  background: #FFFFFF;
+  border-top: 1px solid #F8F8F8;
+  border-bottom: 1px solid #F8F8F8;
+  -webkit-box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
 }
 
 @media (max-width: 18.75em) {
@@ -319,6 +311,15 @@
     grid-column: span 3;
     font-size: 3rem;
   }
+}
+
+.menu__title--text {
+  color: #07A3D3;
+  font-family: "Passion One", cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .menu__containers {
@@ -437,7 +438,12 @@
 }
 
 .addresses__container--title {
-  color: #00c1ec;
+  background-color: white;
+  border-top: 1px solid #F8F8F8;
+  border-bottom: 1px solid #F8F8F8;
+  -webkit-box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
+  color: #07A3D3;
   font-family: "Passion One", cursive;
   text-transform: uppercase;
   width: 100%;
@@ -504,21 +510,26 @@
 
 .contactos {
   background-color: #145364;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  padding-top: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 0.5rem;
-  height: 6.625rem;
-  left: 0rem;
-  top: 9049.375rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0;
 }
 
-.contactos__title {
-  grid-column: span 5;
+.contactos__wrapper {
+  max-width: 73.563rem;
+  width: 45%;
+}
+
+.contactos__wrapper--title {
   color: white;
   text-transform: uppercase;
   font-family: "Passion One", cursive;
@@ -527,30 +538,43 @@
   font-weight: 700;
   line-height: 122%;
   text-align: center;
-  line-height: 23px;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 43.75em) {
-  .contactos__title {
+  .contactos__wrapper--title {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 62em) {
-  .contactos__title {
+  .contactos__wrapper--title {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 83em) {
-  .contactos__title {
+  .contactos__wrapper--title {
     font-size: 3rem;
   }
 }
 
-.contactos__links {
-  display: block;
-  margin: 0 auto;
+.contactos__wrapper--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contactos__wrapper--icons-img {
+  width: 2.5rem;
+  cursor: pointer;
 }
 
 * {

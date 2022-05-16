@@ -35,8 +35,12 @@
         max-width: 73.563rem;
         text-align: center;
         height: auto;
-
+        
         &--title{
+            background-color: white;
+            border-top: 1px solid #F8F8F8;
+            border-bottom: 1px solid #F8F8F8;
+            box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
             color: $light-blue;
             font-family: $ff-main;
             text-transform: uppercase;

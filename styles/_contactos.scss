@@ -3,48 +3,57 @@
 
 .contactos{
     background-color: $dark-blue;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 1rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-bottom: 0.5rem;
-
-
-    height: 6.625rem;
-    left: 0rem;
-    top: 9049.375rem;
-
-    &__title{
-        grid-column: span 5;
-        color: white;   
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem 0;
+    
+    
+    &__wrapper{
+        max-width: 73.563rem;
+        width: 45%;
         
-        text-transform: uppercase;
-        font-family: $ff-main;
-        font-size: 1.45rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 122%;
         
-        text-align: center;
-        line-height: 23px; 
-        @media (max-width: 18.75em){ //280px 
+        &--title{
+            color: white;   
+            text-transform: uppercase;
+            font-family: $ff-main;
+            font-size: 1.45rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 122%;
+            text-align: center;
+            padding-bottom: 1rem;
+            
+            @media (max-width: 18.75em){ //280px 
                 
+            }
+            @media (min-width: 43.75em){ //700px
+                font-size: 2rem;
+            }
+            @media (min-width: 62em){ //992px
+                font-size: 2.5rem;
+            }
+            @media (min-width: 83em){ //1392
+                font-size: 3rem;
+            }     
         }
-        @media (min-width: 43.75em){ //700px
-            font-size: 2rem;
+        &--icons{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-evenly;
+            
+            
+            &-img{
+                width: 2.5rem;
+                cursor: pointer;
+            }
         }
-        @media (min-width: 62em){ //992px
-            font-size: 2.5rem;
-        }
-        @media (min-width: 83em){ //1392
-            font-size: 3rem;
-        }     
-    }
-    &__links{
-        display:block;
-        margin: 0 auto;
         
     }
-
+    
+    
 }
