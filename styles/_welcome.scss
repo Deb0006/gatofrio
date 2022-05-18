@@ -9,8 +9,7 @@
   padding-bottom: 2rem;
   width: 95%;
   margin: 0 auto;
-  background-color: white;
-  border-radius: 15px;
+  // background-color: white;
 
   @media (min-width: 43.75em){ //700px
     width: 95%;
@@ -29,7 +28,8 @@
   &__message {
       // flex: 1;
       //border: 1px solid #ffffff;
-      justify-content: center;
+      // justify-content: center;
+      padding-top: 1.5rem;
       padding-bottom: 5% 0%;
       position: relative;
       z-index: 1;
