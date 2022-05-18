@@ -28,7 +28,7 @@
         width: 100%;
         display: flex;
         place-items: center;
-        padding: 1rem 0;
+        padding: 0.625rem 0;
         
         
         &--title{
@@ -40,7 +40,7 @@
             width: 100%;
             // text-transform: uppercase;
             // height: 100px;
-            @media (max-width: 18.75em){ //Less than 280px 
+            @media (max-width: 20em){ //Less than 320px 
                 
             }
             @media (min-width: 43.75em){ //700px
@@ -71,7 +71,7 @@
             margin: 0 auto;
             width: 80%;
             height: auto;
-            @media (max-width: 18.75em){ //Less than 280px 
+            @media (max-width: 20em){ //Less than 320px 
                 line-height: 1.5; 
                 width: 90%;              
             }
