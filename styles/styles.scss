@@ -5,6 +5,17 @@
 @import "contactos";
 @import "typography";
 
+html {
+  box-sizing: border-box;
+  // width: 100%;
+  // overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,13 +34,5 @@
   // background-size: 65%;
   // background-position: -100% 45%, 190% 55%;
 
-  
  
- 
- 
-  // &__background{
-  //   position: relative;
-  //   z-index: -1;
-
-  // }
 }

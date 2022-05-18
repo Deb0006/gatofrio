@@ -4,11 +4,11 @@
     margin: 0 auto;
     width: 100%;
     height: auto;
-    @media (min-width: 83em){ //1392
-        // background-color: rgb(193, 216, 219);
-    }
-    
-    &__wrapper{
+    // @media (min-width: 83em){ //1392
+        //     // background-color: rgb(193, 216, 219);
+        // }
+        
+        &__wrapper{
         margin: 0 auto;
         width: 95%;
         max-width: 73.563rem;
@@ -31,7 +31,7 @@
         box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
         width: 100%;
         padding: 1rem 0;
-
+        
         &--text{
             display: flex;
             place-content: center;
@@ -93,7 +93,7 @@
         border-radius: 15px;
         padding-top: 0.5rem;
         padding-bottom: 0.813rem;
-
+        
         
         &--images{
             display:block;
