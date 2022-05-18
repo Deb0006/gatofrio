@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-content: center;
     width: 100%;
     height: auto;
     
@@ -32,7 +33,6 @@
         
         
         &--title{
-            place-content: center;
             color: $light-blue;
             font-family: $ff-main;
             font-style: normal;
@@ -58,6 +58,7 @@
         background-color: #E6F4F7;
         z-index: -1;
         width: 100%;
+        padding-left: 0.5rem;
         &--list{
             padding: 2rem 0;
             color: $dark-gray;

@@ -413,6 +413,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100%;
   height: auto;
 }
@@ -441,7 +443,6 @@
 }
 
 .addresses__top--title {
-  place-content: center;
   color: #07A3D3;
   font-family: "Passion One", cursive;
   font-style: normal;
@@ -471,6 +472,7 @@
   background-color: #E6F4F7;
   z-index: -1;
   width: 100%;
+  padding-left: 0.5rem;
 }
 
 .addresses__bottom--list {
