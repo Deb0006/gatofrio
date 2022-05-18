@@ -9,11 +9,12 @@
     $dark-blue 40px,
     $orange 40px,
     $orange 80px,
-    $light-orange 80px,
-    $light-orange 120px
+    $orange 80px,
+    $orange 120px
   );
   // background-color: white;
-  box-shadow: 0px 1px 8px rgb(199, 199, 199);
+  box-shadow: inset 4px 4px 52px rgba(0, 0, 0, 0.29);
+  // box-shadow: 0px 1px 8px rgb(199, 199, 199);
   width: 100%;
   
   &__wrapper{

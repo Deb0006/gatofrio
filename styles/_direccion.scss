@@ -2,50 +2,43 @@
 @import "typography";
 
 .addresses{
-    // position: absolute;
     margin: 0 auto;
-    padding: 4rem 0;
-    background-image: url("../images/pin2.png");
-    background-repeat: no-repeat;
-    background-size: 15rem;
-    background-position: center left -7rem;
-
-    @media (max-width: 18.75em){ //Less than 280px 
-        background-position: bottom 1rem left -5rem;      
-    }
-    @media (min-width: 43.75em){ //700px
-        background-size: 20rem;
-        background-position: bottom -2rem left -6rem;      
-    }
-    @media (min-width: 62em){ //992px
-        background-size: 22rem;
-        
-    }
-    @media (min-width: 83em){ //1392 
-        background-size: 25rem;
-        background-position: bottom left;    
-        max-width: 90rem;  
-        
-    }
-    &__container{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+    &__wrapper{
         width: 80%;
         max-width: 73.563rem;
-        text-align: center;
-        height: auto;
+        margin: 0 auto;
+        display: grid;
+        place-content: center;
+        // border: 2px solid greenyellow;
+    }
+    
+    
+    &__top{
+        border-top: 1px solid #EDEDED;
+        border-bottom: 1px solid #EDEDED;
+        background-color: white;
+        // box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
+        width: 100%;
+        display: flex;
+        place-items: center;
+        padding: 1rem 0;
+        
         
         &--title{
-            background-color: white;
-            border-top: 1px solid #F8F8F8;
-            border-bottom: 1px solid #F8F8F8;
-            box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
+            place-content: center;
             color: $light-blue;
             font-family: $ff-main;
-            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 400;
             width: 100%;
-            padding-bottom: 1rem;
+            // text-transform: uppercase;
             // height: 100px;
             @media (max-width: 18.75em){ //Less than 280px 
                 
@@ -60,7 +53,13 @@
                 font-size: 3rem;
             }
         }
-        &--lista{
+    }
+    &__bottom{
+        background-color: #E6F4F7;
+        z-index: -1;
+        width: 100%;
+        &--list{
+            padding: 2rem 0;
             color: $dark-gray;
             
             font-family: $ff-text;
@@ -84,17 +83,9 @@
                 width: 75%;
             }
             @media (min-width: 83em){ //1392
-                padding: 2rem 0;
+                padding: 3rem 0;
                 font-size: 1.75rem;
             }
         }
     }
 }
-// &__pin{
-    //     margin-top: -1rem;
-    //     margin-left: -5rem;
-    //     width: auto;
-    //     height: 70%;
-    //     position: relative;
-    //     z-index: -2;
-    // }

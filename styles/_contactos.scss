@@ -18,14 +18,14 @@
         
         &--title{
             color: white;   
-            text-transform: uppercase;
             font-family: $ff-main;
             font-size: 1.45rem;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 400;
             line-height: 122%;
             text-align: center;
             padding-bottom: 1rem;
+            // text-transform: uppercase;
             
             @media (max-width: 18.75em){ //280px 
                 

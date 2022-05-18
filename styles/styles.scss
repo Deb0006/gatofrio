@@ -3,6 +3,7 @@
 @import "menu";
 @import "direccion";
 @import "contactos";
+@import "typography";
 
 * {
   box-sizing: border-box;
@@ -15,10 +16,12 @@
 //   background-position: -9rem 4rem, 17rem 12.5rem;
 }
 .wrapper{
-  background-image:url(../images/Vector12.svg), url(../images/Vector13.svg);
-  background-repeat: no-repeat;
-  background-size: 65%;
-  background-position: -100% 45%, 190% 55%;
+  margin: 0;
+  padding: 0;
+  // background-image:url(../images/Vector12.svg), url(../images/Vector13.svg);
+  // background-repeat: no-repeat;
+  // background-size: 65%;
+  // background-position: -100% 45%, 190% 55%;
 
   
  

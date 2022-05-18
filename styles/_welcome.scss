@@ -6,9 +6,11 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   width: 95%;
   margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
 
   @media (min-width: 43.75em){ //700px
     width: 95%;
@@ -77,7 +79,7 @@
     display: block;
     margin: 0 auto;
     
-    width: 40.556vw;
+    width: 40.956vw;
     left: auto;
 
     @media (min-width: 43.75em){ //700px
