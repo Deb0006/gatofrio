@@ -298,7 +298,7 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 3vw;
+  gap: 1vw;
   place-content: center;
   text-align: center;
   z-index: -1;
@@ -338,12 +338,17 @@
 
 .menu__container {
   background-color: #ffffff;
-  border: 1px solid #EDEDED;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 15px;
   padding-top: 0.5rem;
   padding-bottom: 0.813rem;
+}
+
+@media (min-width: 43.75em) {
+  .menu__container {
+    border: 1px solid #EDEDED;
+  }
 }
 
 .menu__container--images {
@@ -574,6 +579,7 @@
 
 .contactos__wrapper--icons-img {
   width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
 }
 

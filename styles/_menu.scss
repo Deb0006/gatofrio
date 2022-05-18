@@ -59,7 +59,7 @@
     &__containers{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 3vw;
+        gap: 1vw;
         place-content: center;
         text-align: center;
         z-index: -1;
@@ -88,15 +88,21 @@
     }
     &__container{
         background-color: #ffffff;
-        border: 1px solid #EDEDED;
+        // border: 1px solid #EDEDED;
         box-sizing: border-box;
         border-radius: 15px;
         padding-top: 0.5rem;
         padding-bottom: 0.813rem;
         
-        // @media (min-width: 43.75em){ //700px
-        //     padding: 2rem 0;
-        // }
+        @media (min-width: 43.75em){ //700px
+            border: 1px solid #EDEDED;
+        }
+        
+        @media (min-width: 62em){ //992px
+        }
+        
+        @media (min-width: 83em){ //1392
+        }
         &--images{
             display:block;
             margin: 0 auto;
