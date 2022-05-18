@@ -317,13 +317,14 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 15px;
-  padding-top: 0.5rem;
-  padding-bottom: 0.813rem;
+  padding: 1rem 0;
 }
 
 @media (min-width: 43.75em) {
   .menu__container {
     border: 1px solid #EDEDED;
+    padding-top: 0.5rem;
+    padding-bottom: 0.813rem;
   }
 }
 

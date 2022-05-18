@@ -91,11 +91,12 @@
         // border: 1px solid #EDEDED;
         box-sizing: border-box;
         border-radius: 15px;
-        padding-top: 0.5rem;
-        padding-bottom: 0.813rem;
+        padding: 1rem 0;
         
         @media (min-width: 43.75em){ //700px
             border: 1px solid #EDEDED;
+            padding-top: 0.5rem;
+            padding-bottom: 0.813rem;
         }
         
         @media (min-width: 62em){ //992px
