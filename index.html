@@ -1,110 +1,185 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito+Sans:wght@300&family=Passion+One&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito+Sans:wght@300&family=Passion+One&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script defer src="script.js" type="module"></script>
     <title>Gato Frio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <nav class="navbar">
+      <nav class="navbar">
+        <div class="navbar__wrapper">
+          <div class="navbar__logo">
+            <h1 href="/" class="navbar__logo--name">GATO FRIO</h1>
+            <img class="navbar__logo--shade" src="images/logo-shade.svg" />
+          </div>
+          <a href="#menu" class="navbar__options">Menú</a>
+          <a href="#addresses" class="navbar__options">Direcciones</a>
+          <a href="#contactos" class="navbar__options">Contáctanos</a>
+        </div>
+      </nav>
+      <!--Hero section-->
+      <section class="welcome">
+        <div class="welcome__message">
+          <h1><span>Disfruta cada</span><br />instante</h1>
+          <a
+            ><br />Bienvenidos a la pagina <br />
+            de productos Gato Frio!</a
+          >
+        </div>
+        <div class="welcome__image">
+          <img
+            class="welcome__image--hero-img"
+            src="images/ice-cream.png"
+            alt="icecream image"
+          />
+        </div>
+      </section>
+      <!--Menu Section-->
 
-            <div class="navbar__wrapper">
-                <div class="navbar__logo">
-                    <h1 href="/" class="navbar__logo--name">GATO FRIO</h1>
-                    <img class="navbar__logo--shade" src="images/logo-shade.svg" >
-                </div>
-                <a href="#menu" class="navbar__options">Menú</a>
-                <a href="#addresses" class="navbar__options">Direcciones</a>
-                <a href="#contactos" class="navbar__options">Contáctanos</a> 
-            </div>
-        
-        </nav>
-        <!--Hero section-->
-        <section class="welcome">
-            <div class="welcome__message">
-                <!--<img class="decoration1" src="images/Group10.png" alt="">-->
-                <h1><span>Disfruta cada</span><br>instante</h1>
-                <a><br>Bienvenidos a la pagina <br> de productos Gato Frio!</a>
-            </div>
-            <div class="welcome__image">
-                <img class="welcome__image--hero-img" src="images/ice-cream.png" alt="icecream image">
-            </div>
-        </section>
-        <!--Menu Section-->
-        
-        <section class="menu" id="menu">
-            <div class="menu__title ">
-                <h1 class="menu__title--text menu__wrapper">Menú</h1>
-            </div>
-            <div class="menu__containers menu__wrapper">
-                <div class="menu__container">
-                    <img class="menu__container--images" src="images/gatofrio.png" alt="postre de helado con forma de perro caliente">
-                    <div class="menu__container--name">Gato Frio</div>
-                </div>
-                <div class="menu__container">
-                    <img class="menu__container--images" src="images/gatiburguer.png" alt="postre de helado con forma de hamburguesa">
-                    <div class="menu__container--name">GatiBurguer</div>
-                </div>
-                <div class="menu__container">
-                    <img class="menu__container--images" src="images/gatotaco.png" alt="postre de helado con forma de taco">
-                    <div class="menu__container--name">GatoTaco</div>
-                </div>
-                <div class="menu__container">
-                    <img class="menu__container--images" src="images/mojigato.png" alt="postre de helado">
-                    <div class="menu__container--name">Mojigato</div>
-                </div>
-                <div class="menu__container">
-                    <img class="menu__container--images" src="images/gatipizza.png" alt="postre de helado con forma de pizza">
-                    <div class="menu__container--name">GatiPizza</div>
-                </div>
-                <div class="menu__container">
-                    <img class="menu__container--images" src="images/brownie.png" alt="brownie con helado">
-                    <div class="menu__container--name">Brownie</div>
-                </div>
-                <div class="menu__container">
-                    <img class="menu__container--images" src="images/malteada.png" alt="malteada con helado">
-                    <div class="menu__container--name">Malteada</div>
-                </div>
-                <div class="menu__container">
-                    <img class="menu__container--images" src="images/banana.png" alt="banana con helado">
-                    <div class="menu__container--name">Banana</div>
-                </div>
-            </div>
-        </section>
-        <!--Direcciones section-->
-        <section class="addresses" id="addresses">
-            <div class="addresses__top">
-                <h1 class="addresses__top--title addresses__wrapper">Direcciones</h1>
-            </div>
-            <div class="addresses__bottom">
-                <ul class="addresses__bottom--list addresses__wrapper">
-                    <li>C.C Nuestro Bogota Local L3-233.</li>
-                    <li>C.C Plaza de las Americas Local 2509 segundo piso.</li>
-                    <li>C.C Micentro El Porvenir Local 209.</li>
-                    <li>C.C Micentro El Porvenir Local 209.</li>
-                    <li>C.C Micentro El Porvenir Local 209.</li>
-                </ul>
-            </div>
-        </section>
-        <!--Contactos section-->
-        <footer class="contactos" id="contactos">
-            <div class="contactos__wrapper">
-                <h1 class="contactos__wrapper--title">Contáctanos</h1>
-                <div class="contactos__wrapper--icons">
-                    <img class="contactos__wrapper--icons-img"  onclick= " window.location.href='https://www.facebook.com/pages/category/Ice-Cream-Shop/GATO-FRIO-671628093212477/'"src="images/Facebook_white.png" alt="facebook icon and link">
-                    <img class="contactos__wrapper--icons-img"  onclick= " window.location.href='https://www.instagram.com/gatofriopostres/?hl=en'" src="images/Instagram_white.png" alt="instagram icon with link" >
-                    <img class="contactos__wrapper--icons-img"  onclick=""src="images/WhatsApp_white.png" alt="whatsapp icon with link" >
-                </div>
-            </div>
-        </footer>
+      <section class="menu" id="menu">
+        <div class="menu__title">
+          <h1 class="menu__title--text menu__wrapper">Menú</h1>
+        </div>
+        <div class="menu__containers menu__wrapper">
+          <div class="menu__container" data-modal-target="#modal">
+            <img
+              class="menu__container--images"
+              src="images/gatofrio.png"
+              alt="postre de helado con forma de perro caliente"
+            />
+            <div class="menu__container--name">Gato Frio</div>
+          </div>
+          <div class="menu__container">
+            <img
+              class="menu__container--images"
+              src="images/gatiburguer.png"
+              alt="postre de helado con forma de hamburguesa"
+            />
+            <div class="menu__container--name">GatiBurguer</div>
+          </div>
+          <div class="menu__container">
+            <img
+              class="menu__container--images"
+              src="images/gatotaco.png"
+              alt="postre de helado con forma de taco"
+            />
+            <div class="menu__container--name">GatoTaco</div>
+          </div>
+          <div class="menu__container">
+            <img
+              class="menu__container--images"
+              src="images/mojigato.png"
+              alt="postre de helado"
+            />
+            <div class="menu__container--name">Mojigato</div>
+          </div>
+          <div class="menu__container">
+            <img
+              class="menu__container--images"
+              src="images/gatipizza.png"
+              alt="postre de helado con forma de pizza"
+            />
+            <div class="menu__container--name">GatiPizza</div>
+          </div>
+          <div class="menu__container">
+            <img
+              class="menu__container--images"
+              src="images/brownie.png"
+              alt="brownie con helado"
+            />
+            <div class="menu__container--name">Brownie</div>
+          </div>
+          <div class="menu__container">
+            <img
+              class="menu__container--images"
+              src="images/malteada.png"
+              alt="malteada con helado"
+            />
+            <div class="menu__container--name">Malteada</div>
+          </div>
+          <div class="menu__container">
+            <img
+              class="menu__container--images"
+              src="images/banana.png"
+              alt="banana con helado"
+            />
+            <div class="menu__container--name">Banana</div>
+          </div>
+        </div>
+      </section>
+      <!--Popup images hidden-->
+      <section class="popup-images" id="modal">
+        <div class="container">
+          <button data-close-button class="container__button">&times;</button>
+          <div class="container__img">
+            <img
+              class="container__img--image"
+              src="images/gatofrio.png"
+              alt=""
+            />
+          </div>
+          <div class="container__text">
+            <h1 class="container__text--name">Gato frio</h1>
+            <p class="container__text--description">
+              Crepe con crema chantilly o crema de mani, 1 dulchicha de helado,
+              2 toppings, 2 salsas, rodajitas de banano, chocolate rayado y
+              azucar pulverizada
+            </p>
+          </div>
+        </div>
+        <div class="active" id="overlay"></div>
+      </section>
+      <!--Direcciones section-->
+      <section class="addresses" id="addresses">
+        <div class="addresses__top">
+          <h1 class="addresses__top--title addresses__wrapper">Direcciones</h1>
+        </div>
+        <div class="addresses__bottom">
+          <ul class="addresses__bottom--list addresses__wrapper">
+            <li>C.C Nuestro Bogota Local L3-233.</li>
+            <li>C.C Plaza de las Americas Local 2509 segundo piso.</li>
+            <li>C.C Micentro El Porvenir Local 209.</li>
+            <li>C.C Micentro El Porvenir Local 209.</li>
+            <li>C.C Micentro El Porvenir Local 209.</li>
+          </ul>
+        </div>
+      </section>
+      <!--Contactos section-->
+      <footer class="contactos" id="contactos">
+        <div class="contactos__wrapper">
+          <h1 class="contactos__wrapper--title">Contáctanos</h1>
+          <div class="contactos__wrapper--icons">
+            <img
+              class="contactos__wrapper--icons-img"
+              onclick=" window.location.href='https://www.facebook.com/pages/category/Ice-Cream-Shop/GATO-FRIO-671628093212477/'"
+              src="images/Facebook_white.png"
+              alt="facebook icon and link"
+            />
+            <img
+              class="contactos__wrapper--icons-img"
+              onclick=" window.location.href='https://www.instagram.com/gatofriopostres/?hl=en'"
+              src="images/Instagram_white.png"
+              alt="instagram icon with link"
+            />
+            <img
+              class="contactos__wrapper--icons-img"
+              onclick=""
+              src="images/WhatsApp_white.png"
+              alt="whatsapp icon with link"
+            />
+          </div>
+        </div>
+      </footer>
     </div>
-
-</body>
+  </body>
 </html>
-

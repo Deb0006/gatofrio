@@ -139,7 +139,7 @@
 }
 
 .welcome__message h1 {
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 7.9vw;
@@ -148,7 +148,7 @@
 
 .welcome__message h1 span {
   color: #07A3D3;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 .welcome__message a {
@@ -376,6 +376,204 @@
     font-size: 2.25rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
+  }
+}
+
+.popup-images {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  width: 101%;
+  height: 101%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  z-index: 10;
+}
+
+@media (max-width: 20em) {
+  .popup-images {
+    display: none;
+  }
+}
+
+@media (min-width: 62em) {
+  .popup-images {
+    display: none;
+  }
+}
+
+@media (min-width: 83em) {
+  .popup-images {
+    display: none;
+  }
+}
+
+.popup-images.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  z-index: 11;
+  -webkit-animation: 400ms opacityAnimationIn ease-in;
+          animation: 400ms opacityAnimationIn ease-in;
+}
+
+.popup-images.inactive {
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  z-index: 11;
+  -webkit-animation: 300ms opacityAnimationOut ease-out;
+          animation: 300ms opacityAnimationOut ease-out;
+}
+
+.container {
+  z-index: 111;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6% 1fr 6%;
+      grid-template-columns: 6% 1fr 6%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border: 3px solid #04C3FF;
+  border-radius: 15px;
+}
+
+.container__button {
+  cursor: pointer;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  background: none;
+  color: #00A5D9;
+  width: 100%;
+}
+
+.container__button:hover {
+  color: #e78c03;
+}
+
+.container__img {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 100%;
+  height: 100%;
+}
+
+.container__img--image {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+}
+
+.container__text {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.container__text--name {
+  font-family: 'Passion One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #00A5D9;
+}
+
+.container__text--description {
+  font-family: 'Roboto', sans-serif;
+  /*roboto condensed*/
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 121.4%;
+  /* or 16px */
+  color: #696969;
+  padding: 5%;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  -webkit-filter: blur(9px);
+          filter: blur(9px);
+  z-index: 9;
+  background: rgba(45, 57, 57, 0.6);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+
+@-webkit-keyframes opacityAnimationIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityAnimationIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes opacityAnimationOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacityAnimationOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
