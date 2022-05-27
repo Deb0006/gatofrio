@@ -21,17 +21,18 @@ imgButton.forEach((img) => {
   img.addEventListener("click", () => {
     loadModal(img);
     modal.classList.add("active");
-    modal.classList.remove("inactive");
+    overlay.classList.add("active");
+    // modal.classList.remove("inactive");
   });
 });
 
 button.addEventListener("click", () => {
   modal.classList.remove("active");
-  // modal.style.animation = "600ms opacityAnimationIn ease-out";
-  modal.classList.add("inactive");
+  overlay.classList.remove("active");
 });
 overlay.addEventListener("click", () => {
   modal.classList.remove("active");
+  overlay.classList.remove("active");
 });
 
 // const imagenX = document.querySelector(".menu__containers")

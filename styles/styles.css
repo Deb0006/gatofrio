@@ -139,7 +139,7 @@
 }
 
 .welcome__message h1 {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: "Luckiest Guy", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 7.9vw;
@@ -148,7 +148,7 @@
 
 .welcome__message h1 span {
   color: #07A3D3;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: "Luckiest Guy", cursive;
 }
 
 .welcome__message a {
@@ -421,14 +421,6 @@
           animation: 400ms opacityAnimationIn ease-in;
 }
 
-.popup-images.inactive {
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
-  z-index: 11;
-  -webkit-animation: 300ms opacityAnimationOut ease-out;
-          animation: 300ms opacityAnimationOut ease-out;
-}
-
 .container {
   z-index: 111;
   margin: 0 auto;
@@ -437,13 +429,13 @@
   padding: 0.5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 6% 1fr 6%;
-      grid-template-columns: 6% 1fr 6%;
+  -ms-grid-columns: 6.5% 1fr 6.5%;
+      grid-template-columns: 6.5% 1fr 6.5%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #FFFFFF;
-  border: 3px solid #04C3FF;
+  background: #ffffff;
+  border: 3px solid #04c3ff;
   border-radius: 15px;
 }
 
@@ -453,12 +445,13 @@
   -ms-grid-column-span: 1;
   grid-column: 3/4;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   border: none;
   outline: none;
   background: none;
-  color: #00A5D9;
+  color: #00a5d9;
   width: 100%;
+  height: 100%;
 }
 
 .container__button:hover {
@@ -476,7 +469,7 @@
 .container__img--image {
   display: block;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   height: 90%;
 }
 
@@ -494,20 +487,20 @@
 }
 
 .container__text--name {
-  font-family: 'Passion One';
+  font-family: "Passion One";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 22px;
-  color: #00A5D9;
+  color: #00a5d9;
 }
 
 .container__text--description {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Akshar", sans-serif;
   /*roboto condensed*/
   font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 121.4%;
   /* or 16px */
   color: #696969;
