@@ -1,6 +1,8 @@
 @import "colors";
-@import "typography";
-
+// @import "typography";
+$ff-main: "Passion One", cursive;
+$ff-text: "Nunito Sans", sans-serif;
+$ff-logo: "Luckiest Guy", cursive;
 .popup-images {
   position: fixed;
   top: 50%;

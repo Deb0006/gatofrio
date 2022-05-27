@@ -1,6 +1,8 @@
 @import "colors";
-@import "typography";
-
+// @import "typography";
+$ff-main: "Passion One", cursive;
+$ff-text: "Nunito Sans", sans-serif;
+$ff-logo: "Luckiest Guy", cursive;
 .welcome {
   display: flex;
   flex-wrap: wrap;
@@ -11,38 +13,41 @@
   margin: 0 auto;
   // background-color: white;
 
-  @media (min-width: 43.75em){ //700px
+  @media (min-width: 43.75em) {
+    //700px
     width: 95%;
   }
 
-  @media (min-width: 62em){ //992px
-    padding: 5rem 0; 
+  @media (min-width: 62em) {
+    //992px
+    padding: 5rem 0;
     width: 85%;
   }
 
-  @media (min-width: 83em){ //1392
-    padding: 7rem 0; 
+  @media (min-width: 83em) {
+    //1392
+    padding: 7rem 0;
     width: 80rem;
   }
 
   &__message {
-      // flex: 1;
-      //border: 1px solid #ffffff;
-      // justify-content: center;
-      padding-top: 1.5rem;
-      padding-bottom: 5% 0%;
-      position: relative;
-      z-index: 1;
-      left: 10px;
-      
-     h1 {
+    // flex: 1;
+    //border: 1px solid #ffffff;
+    // justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 5% 0%;
+    position: relative;
+    z-index: 1;
+    left: 10px;
+
+    h1 {
       font-family: $ff-logo;
       font-style: normal;
       font-weight: 400;
-      font-size: 7.9vw;  //1.45rem
-      
+      font-size: 7.9vw; //1.45rem
+
       color: $orange;
-  
+
       span {
         color: $light-blue;
         font-family: $ff-logo;
@@ -52,48 +57,62 @@
       font-size: 0.95rem;
       font-family: $ff-text;
       font-weight: 300;
-      color: $text-gray; 
+      color: $text-gray;
     }
 
-    @media (min-width: 43.75em){ //700px
-      h1{ font-size: 7.22vw; }
-      a{font-size: 1.3rem;}
+    @media (min-width: 43.75em) {
+      //700px
+      h1 {
+        font-size: 7.22vw;
       }
-  
-      @media (min-width: 62em){ //992px
-         h1{ font-size: 5vw; }
-         a{font-size: 1.5rem;       } 
+      a {
+        font-size: 1.3rem;
       }
-  
-      @media (min-width: 83em){ //1392
-        h1{ font-size: 5.5rem; } 
-        a{font-size: 2rem;}
+    }
+
+    @media (min-width: 62em) {
+      //992px
+      h1 {
+        font-size: 5vw;
       }
+      a {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (min-width: 83em) {
+      //1392
+      h1 {
+        font-size: 5.5rem;
+      }
+      a {
+        font-size: 2rem;
+      }
+    }
   }
 
-
   &__image {
-        
-    &--hero-img{
-      
-    display: block;
-    margin: 0 auto;
-    
-    width: 40.956vw;
-    left: auto;
+    &--hero-img {
+      display: block;
+      margin: 0 auto;
 
-    @media (min-width: 43.75em){ //700px
-    width: 35vw;
-    }
+      width: 40.956vw;
+      left: auto;
 
-    @media (min-width: 62em){ //992px
+      @media (min-width: 43.75em) {
+        //700px
+        width: 35vw;
+      }
+
+      @media (min-width: 62em) {
+        //992px
         width: 25vw;
-    }
+      }
 
-    @media (min-width: 83em){ //1392
+      @media (min-width: 83em) {
+        //1392
         width: 25rem;
-    }
+      }
     }
   }
 }
-
