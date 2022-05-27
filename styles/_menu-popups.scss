@@ -7,11 +7,11 @@ $ff-logo: "Luckiest Guy", cursive;
   position: fixed;
   top: 50%;
   left: 50%;
+  display: none;
   transform: translate(-50%, -50%) scale(0);
   transition: 500ms ease-in-out;
   width: 101%;
   height: 101%;
-  display: grid;
   place-content: center;
   z-index: 10;
   @media (max-width: 20em) {
@@ -34,6 +34,7 @@ $ff-logo: "Luckiest Guy", cursive;
   }
 }
 .popup-images.active {
+  display: grid;
   transform: translate(-50%, -50%) scale(1);
   z-index: 11;
   animation: 400ms opacityAnimationIn ease-in;

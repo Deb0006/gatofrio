@@ -20,6 +20,7 @@ function loadModal(itemMenu) {
 imgButton.forEach((img) => {
   img.addEventListener("click", () => {
     loadModal(img);
+    modal.style.display = "grid";
     modal.classList.add("active");
     overlay.classList.add("active");
     // modal.classList.remove("inactive");

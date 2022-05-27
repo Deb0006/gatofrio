@@ -104,7 +104,9 @@ $ff-logo: "Luckiest Guy", cursive;
     box-sizing: border-box;
     border-radius: 15px;
     padding: 1rem 0;
-    // border: 1px solid #EDEDED;
+    &:hover {
+      border: 1px solid #ededed;
+    }
 
     @media (min-width: 43.75em) {
       //700px
