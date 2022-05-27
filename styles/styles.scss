@@ -8,32 +8,26 @@
 
 html {
   box-sizing: border-box;
+  html {
+    font-family: "Passion One", cursive;
+  }
   // width: 100%;
   // overflow-x: hidden;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  
-//   background-image: url(../images/Vector-12.png), url(../images/Vector-13.png);
-//   background-repeat: no-repeat;
-//   background-size: 16rem 36rem, 17.3rem 32.75rem;
-//   background-position: -9rem 4rem, 17rem 12.5rem;
-}
-.wrapper{
+
+.wrapper {
   margin: 0;
   padding: 0;
   // background-image:url(../images/Vector12.svg), url(../images/Vector13.svg);
   // background-repeat: no-repeat;
   // background-size: 65%;
   // background-position: -100% 45%, 190% 55%;
-
- 
 }
