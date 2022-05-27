@@ -385,35 +385,17 @@
 
 .popup-images {
   position: fixed;
+  display: none;
   top: 50%;
   left: 50%;
-  display: none;
+  width: 101%;
+  height: 101%;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
-  width: 101%;
-  height: 101%;
   place-content: center;
   z-index: 10;
-}
-
-@media (max-width: 20em) {
-  .popup-images {
-    display: none;
-  }
-}
-
-@media (min-width: 62em) {
-  .popup-images {
-    display: none;
-  }
-}
-
-@media (min-width: 83em) {
-  .popup-images {
-    display: none;
-  }
 }
 
 .popup-images.active {
@@ -442,6 +424,18 @@
   background: #ffffff;
   border: 3px solid #04c3ff;
   border-radius: 15px;
+}
+
+@media (max-width: 20em) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .container {
+    width: 50%;
+  }
 }
 
 .container__button {
@@ -495,9 +489,27 @@
   font-family: "Passion One";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 22px;
   color: #00a5d9;
+}
+
+@media (min-width: 43.75em) {
+  .container__text--name {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .container__text--name {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 83em) {
+  .container__text--name {
+    font-size: 1.75rem;
+  }
 }
 
 .container__text--description {
@@ -505,11 +517,22 @@
   /*roboto condensed*/
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.938rem;
   line-height: 121.4%;
-  /* or 16px */
   color: #696969;
   padding: 5%;
+}
+
+@media (min-width: 43.75em) {
+  .container__text--description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 83em) {
+  .container__text--description {
+    font-size: 1.5rem;
+  }
 }
 
 #overlay {

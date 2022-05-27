@@ -5,18 +5,17 @@ $ff-text: "Nunito Sans", sans-serif;
 $ff-logo: "Luckiest Guy", cursive;
 .popup-images {
   position: fixed;
+  display: none;
   top: 50%;
   left: 50%;
-  display: none;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 500ms ease-in-out;
   width: 101%;
   height: 101%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 500ms ease-in-out;
   place-content: center;
   z-index: 10;
   @media (max-width: 20em) {
     //px 320
-    display: none;
   }
 
   @media (min-width: 43.75em) {
@@ -25,12 +24,10 @@ $ff-logo: "Luckiest Guy", cursive;
 
   @media (min-width: 62em) {
     //992px
-    display: none;
   }
 
   @media (min-width: 83em) {
     //1392px
-    display: none;
   }
 }
 .popup-images.active {
@@ -52,6 +49,23 @@ $ff-logo: "Luckiest Guy", cursive;
   background: #ffffff;
   border: 3px solid #04c3ff;
   border-radius: 15px;
+  @media (max-width: 20em) {
+    //px 320
+    width: 80%;
+  }
+
+  @media (min-width: 43.75em) {
+    width: 50%;
+    //700px
+  }
+
+  @media (min-width: 62em) {
+    //992px
+  }
+
+  @media (min-width: 83em) {
+    //1392px
+  }
 
   &__button {
     cursor: pointer;
@@ -93,18 +107,46 @@ $ff-logo: "Luckiest Guy", cursive;
       font-family: "Passion One";
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 1.3rem;
       line-height: 22px;
       color: #00a5d9;
+
+      @media (min-width: 43.75em) {
+        font-size: 1.5rem;
+        //700px
+      }
+
+      @media (min-width: 62em) {
+        font-size: 1.6rem;
+        //992px
+      }
+
+      @media (min-width: 83em) {
+        //1392px
+        font-size: 1.75rem;
+      }
     }
     &--description {
       font-family: "Akshar", sans-serif; /*roboto condensed*/
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 121.4%; /* or 16px */
+      font-size: 0.938rem; //14px
+      line-height: 121.4%; //16px
       color: #696969;
       padding: 5%;
+      @media (min-width: 43.75em) {
+        font-size: 1.125rem;
+        //700px
+      }
+
+      @media (min-width: 62em) {
+        //992px
+      }
+
+      @media (min-width: 83em) {
+        //1392px
+        font-size: 1.5rem;
+      }
     }
   }
 }
