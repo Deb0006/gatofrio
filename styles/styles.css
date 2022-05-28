@@ -671,6 +671,11 @@
   padding-left: 0.9rem;
 }
 
+.addresses__bottom--city {
+  color: #89a9b0;
+  list-style-type: none;
+}
+
 .addresses__bottom--list {
   padding: 2rem 0;
   color: #444444;

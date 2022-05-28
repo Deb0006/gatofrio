@@ -62,6 +62,10 @@ $ff-logo: "Luckiest Guy", cursive;
     z-index: -1;
     width: 100%;
     padding-left: 0.9rem;
+    &--city {
+      color: #89a9b0;
+      list-style-type: none;
+    }
     &--list {
       padding: 2rem 0;
       color: $dark-gray;
