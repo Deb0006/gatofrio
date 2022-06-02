@@ -1,5 +1,4 @@
 import menuData from "/menuData.js";
-
 const menuObj = menuData;
 const imgButton = [...document.querySelectorAll(".menu__container")];
 const modal = document.querySelector(".popup-images");
@@ -9,6 +8,7 @@ const overlay = document.querySelector("#overlay");
 const imgProduct = document.querySelector(".container__img--image");
 const nameProduct = document.querySelector(".container__text--name");
 const descProduct = document.querySelector(".container__text--description");
+
 function loadModal(itemMenu) {
   const img = itemMenu.querySelector(".menu__container--images").src;
   const name = itemMenu.querySelector(".menu__container--name").innerText;

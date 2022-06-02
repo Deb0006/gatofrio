@@ -285,13 +285,15 @@
   .menu__containers {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    gap: 4vw;
+    gap: 1rem;
   }
 }
 
 @media (min-width: 43.75em) {
   .menu__containers {
-    gap: 3vw;
+    gap: 1rem;
+    width: 40.381rem;
+    height: 84.821rem;
   }
 }
 
@@ -300,6 +302,8 @@
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     gap: 1.375rem;
+    width: 40.381rem;
+    height: 64.821rem;
   }
 }
 
@@ -309,6 +313,8 @@
         grid-template-columns: 1fr 1fr 1fr;
     gap: 1.813rem;
     padding: 3rem 0;
+    width: 40.381rem;
+    height: 84.821rem;
   }
 }
 
@@ -329,6 +335,22 @@
     border: 1px solid #ededed;
     padding-top: 0.5rem;
     padding-bottom: 0.813rem;
+    width: 19.572rem;
+    height: 19.393rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .menu__container {
+    width: 17.925rem;
+    height: 17.083;
+  }
+}
+
+@media (min-width: 83em) {
+  .menu__container {
+    width: 23.313rem;
+    height: 22.716rem;
   }
 }
 
@@ -337,11 +359,22 @@
   margin: 0 auto;
   width: 98%;
   height: auto;
+  width: 9.824rem;
+  height: 9.15rem;
 }
 
 @media (min-width: 43.75em) {
   .menu__container--images {
     width: 80%;
+    width: 16.459rem;
+    height: 15.33rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .menu__container--images {
+    width: 13.39rem;
+    height: 12.471rem;
   }
 }
 

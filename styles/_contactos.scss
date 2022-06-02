@@ -1,5 +1,4 @@
 @import "colors";
-// @import "typography";
 $ff-main: "Passion One", cursive;
 $ff-text: "Nunito Sans", sans-serif;
 $ff-logo: "Luckiest Guy", cursive;
@@ -25,7 +24,6 @@ $ff-logo: "Luckiest Guy", cursive;
       line-height: 122%;
       text-align: center;
       padding-bottom: 1rem;
-      // text-transform: uppercase;
 
       @media (max-width: 20em) {
         //320px

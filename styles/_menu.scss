@@ -1,5 +1,4 @@
 @import "colors";
-// @import "typography";
 $ff-main: "Passion One", cursive;
 $ff-text: "Nunito Sans", sans-serif;
 $ff-logo: "Luckiest Guy", cursive;
@@ -15,8 +14,6 @@ $ff-logo: "Luckiest Guy", cursive;
     margin: 0 auto;
     width: 95%;
     max-width: 73.563rem;
-    // display: grid;
-    // place-content: center;
     @media (max-width: 20em) {
       //Less than 320px
     }
@@ -46,8 +43,6 @@ $ff-logo: "Luckiest Guy", cursive;
       font-style: normal;
       font-weight: 400;
       width: 100%;
-      // text-transform: uppercase;
-      // height: 100px;
       @media (max-width: 20em) {
         //Less than 320px
       }
@@ -73,22 +68,25 @@ $ff-logo: "Luckiest Guy", cursive;
     text-align: center;
     z-index: -1;
     padding: 2rem 0;
-
     @media (max-width: 20em) {
       //px 320
       grid-template-columns: 1fr;
-      gap: 4vw;
+      gap: 1rem;
     }
 
     @media (min-width: 43.75em) {
       //700px
-      gap: 3vw;
+      gap: 1rem;
+      width: 40.381rem;
+      height: 84.821rem;
     }
 
     @media (min-width: 62em) {
       //992px
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1.375rem;
+      width: 40.381rem;
+      height: 64.821rem;
     }
 
     @media (min-width: 83em) {
@@ -96,6 +94,8 @@ $ff-logo: "Luckiest Guy", cursive;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1.813rem;
       padding: 3rem 0;
+      width: 40.381rem;
+      height: 84.821rem;
       // background-color: white;
     }
   }
@@ -113,32 +113,38 @@ $ff-logo: "Luckiest Guy", cursive;
       border: 1px solid #ededed;
       padding-top: 0.5rem;
       padding-bottom: 0.813rem;
+      width: 19.572rem;
+      height: 19.393rem;
     }
 
     @media (min-width: 62em) {
       //992px
+      width: 17.925rem;
+      height: 17.083;
     }
 
     @media (min-width: 83em) {
       //1392
+      width: 23.313rem;
+      height: 22.716rem;
     }
     &--images {
       display: block;
       margin: 0 auto;
       width: 98%;
       height: auto;
-      // width: 9.824rem;
-      // height: 10.209rem;
+      width: 9.824rem;
+      height: 9.15rem;
       @media (min-width: 43.75em) {
         //700px
         width: 80%;
-        // width: 16.459rem;
-        // height: 15.33rem;
+        width: 16.459rem;
+        height: 15.33rem;
       }
       @media (min-width: 62em) {
         //992px
-        // width: 13.39rem;
-        // height: 12.471rem;
+        width: 13.39rem;
+        height: 12.471rem;
       }
       @media (min-width: 83em) {
         //1392
