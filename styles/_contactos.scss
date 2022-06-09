@@ -1,6 +1,6 @@
 @import "colors";
-$ff-main: "Passion One", cursive;
-$ff-text: "Nunito Sans", sans-serif;
+$ff-main: "Open Sans", sans-serif;
+$ff-text: "Open Sans", sans-serif;
 $ff-logo: "Luckiest Guy", cursive;
 .contactos {
   background-color: $dark-blue;
@@ -18,10 +18,13 @@ $ff-logo: "Luckiest Guy", cursive;
     &--title {
       color: white;
       font-family: $ff-main;
-      font-size: 1.45rem;
       font-style: normal;
-      font-weight: 400;
-      line-height: 122%;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      /* identical to box height */
+
+      letter-spacing: -0.01em;
       text-align: center;
       padding-bottom: 1rem;
 

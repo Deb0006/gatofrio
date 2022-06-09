@@ -1,43 +1,42 @@
 @import "colors";
-$ff-main: "Passion One", cursive;
-$ff-text: "Nunito Sans", sans-serif;
+$ff-main: "Open Sans", sans-serif;
+$ff-text: "Open Sans", sans-serif;
 $ff-logo: "Luckiest Guy", cursive;
 .navbar {
-  background: repeating-linear-gradient(
-    0deg,
-    $dark-blue 0px,
-    $dark-blue 40px,
-    $orange 40px,
-    $orange 120px
-  );
-  // background-color: white;
-  box-shadow: inset 4px 4px 52px rgba(0, 0, 0, 0.29);
-  // box-shadow: 0px 1px 8px rgb(199, 199, 199);
+  background-color: white;
   width: 100%;
 
   &__wrapper {
-    text-align: center;
-    place-items: center;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 65% 35%;
     width: 100%;
     height: 7.5em;
     max-width: 73.563rem;
   }
-  &__logo {
-    grid-column: span 3;
-    padding-top: 0.5rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
 
+  &__logo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    place-items: center;
+    &--hamburguer {
+      display: block;
+      // grid-column-start: 1;
+      @media (min-width: 62em) {
+        //992px
+        display: none;
+      }
+    }
     &--name {
+      grid-column: span 3;
+      display: block;
       color: $blue-title;
-      font-size: 2rem;
       font-family: $ff-logo;
+      font-style: normal;
       font-weight: 400;
-      text-decoration: none;
+      font-size: 32px;
+      line-height: 32px;
       position: absolute;
       z-index: 1;
       @media (min-width: 43.75em) {
@@ -49,44 +48,42 @@ $ff-logo: "Luckiest Guy", cursive;
         font-size: 3rem;
       }
     }
-    &--shade {
-      position: relative;
-      align-self: flex-end;
-      width: 9.563rem;
-      height: 3rem;
-      left: -4px;
-      top: 16px;
-
-      @media (min-width: 43.75em) {
-        //700px
-        top: 17px;
-      }
-      @media (min-width: 62em) {
-        //992px
-        width: 12.563rem;
-        top: 20px;
-      }
-    }
   }
 
   &__options {
-    color: $orange;
-    font-size: 1.25rem;
-    text-decoration: none;
-    font-family: $ff-main;
-    font-weight: 400;
-    // text-shadow: 0px 1px 3px rgb(15, 15, 15);
-
-    @media (min-width: 43.75em) {
-      //700px
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    grid-row-start: 2;
+    border: 1px solid #f3f3f3;
+    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.2);
     @media (min-width: 62em) {
       //992px
-      font-size: 1.3rem;
     }
     @media (min-width: 83em) {
       //1392
-      font-size: 1.4rem;
     }
+    a {
+      color: $text-gray;
+      font-family: $ff-main;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 18px;
+
+      // font-size: 1.25rem;
+      @media (min-width: 43.75em) {
+        //700px
+      }
+      @media (min-width: 62em) {
+        //992px
+        font-size: 1.3rem;
+      }
+      @media (min-width: 83em) {
+        //1392
+        font-size: 1.4rem;
+      }
+    }
+    // text-shadow: 0px 1px 3px rgb(15, 15, 15);
   }
 }

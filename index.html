@@ -11,41 +11,54 @@
       href="https://fonts.googleapis.com/css2?family=Akshar&family=Luckiest+Guy&family=Nunito+Sans:wght@700&family=Passion+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script defer src="script.js" type="module"></script>
     <title>Gato Frio</title>
   </head>
   <body>
     <div class="wrapper">
+      <!--Navbar section-->
       <nav class="navbar">
         <div class="navbar__wrapper">
           <div class="navbar__logo">
-            <h1 href="/" class="navbar__logo--name">GATO FRIO</h1>
             <img
-              class="navbar__logo--shade"
-              src="images/logo-shade.svg"
-              alt="sombra bajo el logo"
+              src="images/icon.png"
+              alt="icono para seleccionar opciones"
+              class="navbar__logo--hamburguer"
             />
+            <h1 href="/" class="navbar__logo--name">GATO FRIO</h1>
           </div>
-          <a href="#menu" class="navbar__options">Menú</a>
-          <a href="#addresses" class="navbar__options">Direcciones</a>
-          <a href="#contactos" class="navbar__options">Contáctanos</a>
+          <div class="navbar__options">
+            <a href="#menu" class="navbar__options--menu">Menú</a>
+            <a href="#addresses" class="navbar__options--address"
+              >Direcciones</a
+            >
+            <a href="#contactos" class="navbar__options--contact"
+              >Contáctanos</a
+            >
+          </div>
         </div>
       </nav>
       <!--Hero section-->
       <section class="welcome">
         <div class="welcome__message">
-          <h1><span>Disfruta cada</span><br />instante</h1>
+          <h1>Disfruta <span>cada</span><br />instante</h1>
           <a
             ><br />Bienvenidos a la pagina <br />
-            de productos Gato Frio!</a
+            de productos <span>Gato Frio!</span></a
           >
         </div>
         <div class="welcome__image">
           <img
             class="welcome__image--hero-img"
-            src="images/ice-cream.png"
-            alt="icecream image"
+            src="images/ice-cream2.png"
+            alt="imagen de helado"
           />
         </div>
       </section>
@@ -53,7 +66,9 @@
 
       <section class="menu" id="menu">
         <div class="menu__title">
-          <h1 class="menu__title--text menu__wrapper">Menú</h1>
+          <h1 class="menu__title--text menu__wrapper">
+            Menú <span> • Productos Gato Frio</span>
+          </h1>
         </div>
         <div class="menu__containers menu__wrapper">
           <div class="menu__container" data-modal-target="#modal">
@@ -139,7 +154,9 @@
       <!--Direcciones section-->
       <section class="addresses" id="addresses">
         <div class="addresses__top">
-          <h1 class="addresses__top--title addresses__wrapper">Direcciones</h1>
+          <h1 class="addresses__top--title addresses__wrapper">
+            Direcciones <span> • Bogota y Pereira</span>
+          </h1>
         </div>
         <div class="addresses__bottom addresses__wrapper">
           <ul class="addresses__bottom--list">

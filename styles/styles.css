@@ -1,41 +1,47 @@
 .navbar {
-  background: repeating-linear-gradient(0deg, #145364 0px, #145364 40px, #fd703b 40px, #fd703b 120px);
-  -webkit-box-shadow: inset 4px 4px 52px rgba(0, 0, 0, 0.29);
-          box-shadow: inset 4px 4px 52px rgba(0, 0, 0, 0.29);
+  background-color: white;
   width: 100%;
 }
 
 .navbar__wrapper {
-  text-align: center;
-  place-items: center;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 65% 35%;
+      grid-template-rows: 65% 35%;
   width: 100%;
   height: 7.5em;
   max-width: 73.563rem;
 }
 
 .navbar__logo {
-  grid-column: span 3;
-  padding-top: 0.5rem;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 85%;
+      grid-template-columns: 15% 85%;
+  place-items: center;
+}
+
+.navbar__logo--hamburguer {
+  display: block;
+}
+
+@media (min-width: 62em) {
+  .navbar__logo--hamburguer {
+    display: none;
+  }
 }
 
 .navbar__logo--name {
-  color: #007d97;
-  font-size: 2rem;
+  grid-column: span 3;
+  display: block;
+  color: #0495b2;
   font-family: "Luckiest Guy", cursive;
+  font-style: normal;
   font-weight: 400;
-  text-decoration: none;
+  font-size: 32px;
+  line-height: 32px;
   position: absolute;
   z-index: 1;
 }
@@ -52,45 +58,42 @@
   }
 }
 
-.navbar__logo--shade {
-  position: relative;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: 9.563rem;
-  height: 3rem;
-  left: -4px;
-  top: 16px;
-}
-
-@media (min-width: 43.75em) {
-  .navbar__logo--shade {
-    top: 17px;
-  }
-}
-
-@media (min-width: 62em) {
-  .navbar__logo--shade {
-    width: 12.563rem;
-    top: 20px;
-  }
-}
-
 .navbar__options {
-  color: #fd703b;
-  font-size: 1.25rem;
-  text-decoration: none;
-  font-family: "Passion One", cursive;
-  font-weight: 400;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  border: 1px solid #f3f3f3;
+  -webkit-box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 62em) {
   .navbar__options {
+    display: none;
+  }
+}
+
+.navbar__options a {
+  color: #484848;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (min-width: 62em) {
+  .navbar__options a {
     font-size: 1.3rem;
   }
 }
 
 @media (min-width: 83em) {
-  .navbar__options {
+  .navbar__options a {
     font-size: 1.4rem;
   }
 }
@@ -104,61 +107,86 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
   width: 95%;
   margin: 0 auto;
+  margin-top: 4rem;
+  background: #f5f5f5;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 22px;
 }
 
-@media (min-width: 43.75em) {
+@media (min-width: 37.5em) {
   .welcome {
+    padding: 1rem 0;
     width: 95%;
   }
 }
 
 @media (min-width: 62em) {
   .welcome {
-    padding: 5rem 0;
     width: 85%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 6rem;
   }
 }
 
 @media (min-width: 83em) {
   .welcome {
-    padding: 7rem 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 6rem;
+    margin-top: 5rem;
     width: 80rem;
   }
 }
 
 .welcome__message {
-  padding-top: 1.5rem;
-  padding-bottom: 5% 0%;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
   z-index: 1;
-  left: 10px;
 }
 
 .welcome__message h1 {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 7.9vw;
-  color: #fd703b;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.3em;
+  letter-spacing: -0.015em;
+  font-size: 7.222vw;
+  color: #008484;
 }
 
 .welcome__message h1 span {
-  color: #07A3D3;
-  font-family: "Luckiest Guy", cursive;
+  font-weight: 700;
 }
 
 .welcome__message a {
-  font-size: 0.95rem;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 300;
-  color: #6c6c6c;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.5px;
+  color: #484848;
 }
 
-@media (min-width: 43.75em) {
+.welcome__message a span {
+  font-weight: 600;
+}
+
+@media (min-width: 37.5em) {
   .welcome__message h1 {
     font-size: 7.22vw;
   }
@@ -185,14 +213,19 @@
   }
 }
 
-.welcome__image--hero-img {
-  display: block;
-  margin: 0 auto;
-  width: 40.956vw;
-  left: auto;
+.welcome__image {
+  margin: -4% 0 -5px 0;
 }
 
-@media (min-width: 43.75em) {
+.welcome__image--hero-img {
+  top: -30px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 41vw;
+}
+
+@media (min-width: 37.5em) {
   .welcome__image--hero-img {
     width: 35vw;
   }
@@ -212,43 +245,57 @@
 
 .menu {
   margin: 0 auto;
-  width: 100%;
+  padding-top: 1rem;
+  width: 95%;
   height: auto;
 }
 
 .menu__wrapper {
   margin: 0 auto;
-  width: 95%;
-  max-width: 73.563rem;
-}
-
-@media (min-width: 62em) {
-  .menu__wrapper {
-    font-size: 1.5rem;
-    width: 85%;
-  }
 }
 
 .menu__title {
-  border: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-  background-color: white;
-  -webkit-box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
-          box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
-  width: 100%;
-  padding: 0.5rem 0;
+  padding: 1.5rem 1rem 0 1rem;
+}
+
+@media (min-width: 62em) {
+  .menu__title {
+    padding-left: 1.5rem;
+  }
 }
 
 .menu__title--text {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-content: center;
-  color: #07A3D3;
-  font-family: "Passion One", cursive;
-  font-style: normal;
+  color: #07a3d3;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+}
+
+.menu__title--text span {
+  display: inline;
+  padding-left: 0.3rem;
+  font-size: 14px;
   font-weight: 400;
-  width: 100%;
+  color: #6c6c6c;
+}
+
+@media (min-width: 43.75em) {
+  .menu__title--text span {
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .menu__title--text span {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 43.75em) {
@@ -259,13 +306,10 @@
 
 @media (min-width: 62em) {
   .menu__title--text {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 83em) {
-  .menu__title--text {
-    font-size: 3rem;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    padding: 1.5rem;
   }
 }
 
@@ -278,7 +322,6 @@
   place-content: center;
   text-align: center;
   z-index: -1;
-  padding: 2rem 0;
 }
 
 @media (max-width: 20em) {
@@ -387,10 +430,12 @@
 
 .menu__container--name {
   color: #6c6c6c;
-  font-family: "Passion One", cursive;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 1.3rem;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.015em;
 }
 
 @media (min-width: 43.75em) {
@@ -646,7 +691,6 @@
       align-content: center;
   width: 100%;
   height: auto;
-  background-color: #e6f4f7;
 }
 
 .addresses__wrapper {
@@ -656,31 +700,43 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .addresses__top {
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-  background-color: white;
-  -webkit-box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
-          box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
   width: 100%;
-  padding: 0.625rem 0;
+  padding: 1.5rem 2rem;
 }
 
 .addresses__top--title {
-  color: #07A3D3;
-  font-family: "Passion One", cursive;
-  font-style: normal;
-  font-weight: 400;
+  color: #07a3d3;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 22px;
+  letter-spacing: -0.01em;
   width: 100%;
+}
+
+.addresses__top--title span {
+  padding-left: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6c6c6c;
+}
+
+@media (min-width: 43.75em) {
+  .addresses__top--title span {
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .addresses__top--title span {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 43.75em) {
@@ -691,17 +747,16 @@
 
 @media (min-width: 62em) {
   .addresses__top--title {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 83em) {
-  .addresses__top--title {
-    font-size: 3rem;
+    font-size: 48px;
+    line-height: 65px;
+    padding: 1.5rem;
   }
 }
 
 .addresses__bottom {
+  background-color: #e6f4f7;
+  border: 1px solid rgba(205, 205, 205, 0.09);
+  border-radius: 20px;
   width: 100%;
   height: auto;
   -webkit-box-pack: justify;
@@ -711,7 +766,6 @@
 
 @media (min-width: 43.75em) {
   .addresses__bottom {
-    width: 90%;
     font-size: 2rem;
   }
 }
@@ -765,6 +819,12 @@
   }
 }
 
+@media (min-width: 43.75em) {
+  .addresses__bottom--map iframe {
+    border-radius: 350px;
+  }
+}
+
 @media (min-width: 62em) {
   .addresses__bottom--map iframe {
     height: auto;
@@ -785,9 +845,10 @@
       align-self: center;
   padding: 2rem 1rem 2rem 2rem;
   color: #444444;
-  font-family: "Nunito Sans", sans-serif;
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.875rem;
   line-height: 2;
   text-align: left;
@@ -849,11 +910,13 @@
 
 .contactos__wrapper--title {
   color: white;
-  font-family: "Passion One", cursive;
-  font-size: 1.45rem;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  line-height: 122%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -901,7 +964,7 @@ html {
 }
 
 html html {
-  font-family: "Passion One", cursive;
+  font-family: "Open Sans", sans-serif;
 }
 
 *,
