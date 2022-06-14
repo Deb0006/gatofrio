@@ -3,9 +3,8 @@ $ff-main: "Open Sans", sans-serif;
 $ff-text: "Open Sans", sans-serif;
 $ff-logo: "Luckiest Guy", cursive;
 .navbar {
-  background-color: white;
   width: 100%;
-
+  padding: 1rem;
   &__wrapper {
     margin: 0 auto;
     display: grid;
@@ -15,14 +14,14 @@ $ff-logo: "Luckiest Guy", cursive;
     max-width: 73.563rem;
     @media (min-width: 62em) {
       //992px
+      width: 85%;
       display: grid;
       grid-template-columns: 60% 40%;
-      padding: 0 2rem;
       max-width: 73.563rem;
     }
     @media (min-width: 83em) {
       //1392
-      padding: 3rem 0;
+      // padding: 3rem 0;
     }
   }
 
@@ -31,6 +30,7 @@ $ff-logo: "Luckiest Guy", cursive;
     display: grid;
     grid-template-columns: 15% 85%;
     place-items: center;
+
     @media (min-width: 62em) {
       //992px
       font-size: 3rem;
@@ -38,6 +38,8 @@ $ff-logo: "Luckiest Guy", cursive;
     }
     &--hamburguer {
       display: block;
+      width: 32px;
+      height: 18.9px;
       // grid-column-start: 1;
       @media (min-width: 62em) {
         //992px
@@ -72,15 +74,15 @@ $ff-logo: "Luckiest Guy", cursive;
     place-items: center;
     grid-row-start: 2;
     border: 1px solid #f3f3f3;
-    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.2);
 
     @media (min-width: 62em) {
       //992px
       border: none;
       box-shadow: none;
-      display: flex;
-      justify-content: space-between;
-
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      place-items: center;
+      gap: 0.5rem;
       grid-column-start: 2;
       grid-row-start: 1;
     }
@@ -94,20 +96,25 @@ $ff-logo: "Luckiest Guy", cursive;
       font-weight: 600;
       font-size: 16px;
       line-height: 18px;
-
-      // font-size: 1.25rem;
+      padding: 0.5rem;
       @media (min-width: 43.75em) {
         //700px
       }
       @media (min-width: 62em) {
         //992px
         font-size: 1.3rem;
+        &:hover {
+          display: grid;
+          place-content: center;
+          background: #00a6a6;
+          border-radius: 24.5px;
+          color: white;
+        }
       }
       @media (min-width: 83em) {
         //1392
         font-size: 1.4rem;
       }
     }
-    // text-shadow: 0px 1px 3px rgb(15, 15, 15);
   }
 }

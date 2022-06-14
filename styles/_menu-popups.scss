@@ -103,11 +103,12 @@ $ff-logo: "Luckiest Guy", cursive;
     padding-bottom: 5%;
 
     &--name {
-      font-family: "Passion One";
+      font-family: $ff-text;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: -0.04em;
       font-size: 1.3rem;
-      line-height: 22px;
       color: #00a5d9;
 
       @media (min-width: 43.75em) {
@@ -126,11 +127,11 @@ $ff-logo: "Luckiest Guy", cursive;
       }
     }
     &--description {
-      font-family: "Akshar", sans-serif; /*roboto condensed*/
+      font-family: $ff-text;
       font-style: normal;
       font-weight: 400;
       font-size: 0.938rem; //14px
-      line-height: 121.4%; //16px
+      line-height: 120.5%;
       color: #696969;
       padding: 5%;
       @media (min-width: 43.75em) {

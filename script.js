@@ -35,51 +35,21 @@ overlay.addEventListener("click", () => {
   modal.classList.remove("active");
   overlay.classList.remove("active");
 });
-// navbar
+
+// navbar hamburguer
+
 const navbarOptions = document.querySelector(".navbar__options");
 const navbarBtn = document.querySelector(".navbar__logo--hamburguer");
 
+// navbarOptions.style.display = "none";
 navbarBtn.addEventListener("click", () => {
-  navbarOptions.style.display = "grid";
+  console.log(navbarOptions.style.display);
+  navbarOptions.style.display === "none"
+    ? (navbarOptions.style.display = "grid")
+    : (navbarOptions.style.display = "none");
 });
-// const imagenX = document.querySelector(".menu__containers")
-
-// const openModalButtons = document.querySelectorAll("[data-modal-target]");
-// const closeModalButtons = document.querySelectorAll("[data-close-button]");
-// const overlay = document.getElementById("overlay");
-// console.log(openModalButtons);
-// console.log(closeModalButtons);
-
-// openModalButtons.forEach((div) => {
-//   div.addEventListener("click", () => {
-//     const modal = document.querySelector(div.dataset.modalTarget);
-//     console.log(div);
-//     console.log(modal);
-//     openModal(modal);
-//   });
-// });
-// overlay.addEventListener("click", () => {
-//   const modal = document.querySelectorAll(".popup-images.active");
-//   modal.forEach((modal) => {
-//     closeModal(modal);
-//   });
-// });
-// closeModalButtons.forEach((div) => {
-//   div.addEventListener("click", () => {
-//     const modal = div.closest(".popup-images");
-//     console.log(div);
-//     console.log(modal);
-//     closeModal(modal);
-//   });
-// });
-
-// function openModal(modal) {
-//   if (modal == null) return;
-//   modal.classList.add("active");
-//   overlay.classList.add("active");
+// if (window.matchMedia("(min-width: 43.75em)").matches) {
+//   navbarOptions.style.display = "grid";
+//   console.log("matched");
 // }
-// function closeModal(modal) {
-//   if (modal == null) return;
-//   modal.classList.remove("active");
-//   overlay.classList.remove("active");
-// }
+/* the viewport is at least 400 pixels wide */
