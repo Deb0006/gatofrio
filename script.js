@@ -43,7 +43,7 @@ const navbarBtn = document.querySelector(".navbar__logo--hamburguer");
 
 // navbarOptions.style.display = "none";
 navbarBtn.addEventListener("click", () => {
-  console.log(navbarOptions.style.display);
+  // console.log(navbarOptions.style.display);
   navbarOptions.style.display === "none"
     ? (navbarOptions.style.display = "grid")
     : (navbarOptions.style.display = "none");
