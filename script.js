@@ -35,7 +35,13 @@ overlay.addEventListener("click", () => {
   modal.classList.remove("active");
   overlay.classList.remove("active");
 });
+// navbar
+const navbarOptions = document.querySelector(".navbar__options");
+const navbarBtn = document.querySelector(".navbar__logo--hamburguer");
 
+navbarBtn.addEventListener("click", () => {
+  navbarOptions.style.display = "grid";
+});
 // const imagenX = document.querySelector(".menu__containers")
 
 // const openModalButtons = document.querySelectorAll("[data-modal-target]");

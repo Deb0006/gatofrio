@@ -14,6 +14,23 @@
   max-width: 73.563rem;
 }
 
+@media (min-width: 62em) {
+  .navbar__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    padding: 0 2rem;
+    max-width: 73.563rem;
+  }
+}
+
+@media (min-width: 83em) {
+  .navbar__wrapper {
+    padding: 3rem 0;
+  }
+}
+
 .navbar__logo {
   width: 100%;
   display: -ms-grid;
@@ -21,6 +38,13 @@
   -ms-grid-columns: 15% 85%;
       grid-template-columns: 15% 85%;
   place-items: center;
+}
+
+@media (min-width: 62em) {
+  .navbar__logo {
+    font-size: 3rem;
+    place-items: center start;
+  }
 }
 
 .navbar__logo--hamburguer {
@@ -59,8 +83,7 @@
 }
 
 .navbar__options {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
@@ -73,7 +96,19 @@
 
 @media (min-width: 62em) {
   .navbar__options {
-    display: none;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
   }
 }
 
@@ -107,6 +142,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 73.563rem;
   width: 95%;
   margin: 0 auto;
   margin-top: 4rem;
@@ -139,7 +175,8 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0 6rem;
-    margin-top: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
     width: 80rem;
   }
 }
@@ -167,7 +204,7 @@
   line-height: 1.3em;
   letter-spacing: -0.015em;
   font-size: 7.222vw;
-  color: #008484;
+  color: #1ba4a4;
 }
 
 .welcome__message h1 span {
@@ -252,50 +289,21 @@
 
 .menu__wrapper {
   margin: 0 auto;
+  max-width: 73.563rem;
 }
 
 .menu__title {
-  padding: 1.5rem 1rem 0 1rem;
-}
-
-@media (min-width: 62em) {
-  .menu__title {
-    padding-left: 1.5rem;
-  }
+  padding: 1.5rem 1rem 1rem 1rem;
 }
 
 .menu__title--text {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 90%;
   color: #07a3d3;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.01em;
-}
-
-.menu__title--text span {
-  display: inline;
-  padding-left: 0.3rem;
-  font-size: 14px;
-  font-weight: 400;
-  color: #6c6c6c;
-}
-
-@media (min-width: 43.75em) {
-  .menu__title--text span {
-    padding-left: 0.5rem;
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 62em) {
-  .menu__title--text span {
-    font-size: 36px;
-  }
 }
 
 @media (min-width: 43.75em) {
@@ -306,10 +314,27 @@
 
 @media (min-width: 62em) {
   .menu__title--text {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 65px;
     padding: 1.5rem;
+  }
+}
+
+.menu__title--text span {
+  display: inline;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 0.1rem;
+  color: #6c6c6c;
+}
+
+@media (min-width: 43.75em) {
+  .menu__title--text span {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .menu__title--text span {
+    font-size: 1.3rem;
   }
 }
 
@@ -346,7 +371,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     gap: 1.375rem;
     width: 40.381rem;
-    height: 64.821rem;
+    height: auto;
   }
 }
 
@@ -355,9 +380,9 @@
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     gap: 1.813rem;
-    padding: 3rem 0;
-    width: 40.381rem;
-    height: 84.821rem;
+    padding: 0;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -367,10 +392,6 @@
           box-sizing: border-box;
   border-radius: 15px;
   padding: 1rem 0;
-}
-
-.menu__container:hover {
-  border: 1px solid #e0e0e0;
 }
 
 @media (min-width: 43.75em) {
@@ -394,6 +415,11 @@
   .menu__container {
     width: 23.313rem;
     height: 22.716rem;
+  }
+  .menu__container:hover {
+    border: 1px solid #cdcdcd;
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -455,7 +481,7 @@
 
 @media (min-width: 83em) {
   .menu__container--name {
-    font-size: 2.25rem;
+    font-size: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
   }
@@ -691,6 +717,7 @@
       align-content: center;
   width: 100%;
   height: auto;
+  padding-bottom: 2rem;
 }
 
 .addresses__wrapper {
@@ -705,38 +732,17 @@
 }
 
 .addresses__top {
-  width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem 1rem 2rem;
 }
 
 .addresses__top--title {
+  width: 100%;
   color: #07a3d3;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 22px;
   letter-spacing: -0.01em;
-  width: 100%;
-}
-
-.addresses__top--title span {
-  padding-left: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #6c6c6c;
-}
-
-@media (min-width: 43.75em) {
-  .addresses__top--title span {
-    padding-left: 0.5rem;
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 62em) {
-  .addresses__top--title span {
-    font-size: 36px;
-  }
 }
 
 @media (min-width: 43.75em) {
@@ -747,9 +753,28 @@
 
 @media (min-width: 62em) {
   .addresses__top--title {
-    font-size: 48px;
-    line-height: 65px;
     padding: 1.5rem;
+  }
+}
+
+.addresses__top span {
+  display: inline;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding-left: 0.5rem;
+  color: #6c6c6c;
+}
+
+@media (min-width: 43.75em) {
+  .addresses__top span {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .addresses__top span {
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
   }
 }
 
@@ -766,7 +791,20 @@
 
 @media (min-width: 43.75em) {
   .addresses__bottom {
+    padding-right: 2rem;
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .addresses__bottom {
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 83em) {
+  .addresses__bottom {
+    padding-right: 3rem;
   }
 }
 
@@ -802,7 +840,7 @@
 
 @media (min-width: 83em) {
   .addresses__bottom--map {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -843,7 +881,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 2rem 0 2rem 2rem;
   color: #444444;
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
@@ -877,7 +915,6 @@
 
 @media (min-width: 83em) {
   .addresses__bottom--list {
-    padding: 3rem 0;
     font-size: 1.75rem;
   }
 }

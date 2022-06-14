@@ -14,7 +14,7 @@ $ff-logo: "Luckiest Guy", cursive;
   &__wrapper {
     margin: 0 auto;
     // width: 55%;
-    // max-width: 73.563rem;
+    max-width: 73.563rem;
     // border: 2px solid red;
   }
   &__title {
@@ -23,44 +23,21 @@ $ff-logo: "Luckiest Guy", cursive;
     // background-color: rgb(255, 255, 255);
     // // box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.08);
     // box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
-    padding: 1.5rem 1rem 0 1rem;
-    @media (min-width: 62em) {
-      //992px
-      padding-left: 1.5rem;
-    }
+    padding: 1.5rem 1rem 1rem 1rem;
+    // @media (min-width: 62em) {
+    //   //992px
+    //   padding-left: 1.5rem;
+    // }
 
     &--text {
-      width: 100%;
-      display: flex;
+      width: 90%;
+      // display: flex;
       color: $light-blue;
       font-family: $ff-text;
       font-weight: 700;
       font-size: 16px;
       line-height: 22px;
       letter-spacing: -0.01em;
-      span {
-        display: inline;
-        padding-left: 0.3rem;
-        font-size: 14px;
-        font-weight: 400;
-        color: #6c6c6c;
-        @media (max-width: 20em) {
-          //Less than 320px
-        }
-        @media (min-width: 43.75em) {
-          //700px
-          padding-left: 0.5rem;
-          font-size: 1.5rem;
-        }
-        @media (min-width: 62em) {
-          //992px
-          font-size: 36px;
-        }
-        @media (min-width: 83em) {
-          //1392
-          // font-size: 3rem;
-        }
-      }
       @media (max-width: 20em) {
         //Less than 320px
       }
@@ -70,14 +47,33 @@ $ff-logo: "Luckiest Guy", cursive;
       }
       @media (min-width: 62em) {
         //992px
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 65px;
         padding: 1.5rem;
       }
       @media (min-width: 83em) {
         //1392
         // font-size: 3rem;
+      }
+      span {
+        display: inline;
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 0.1rem;
+        color: #6c6c6c;
+        @media (max-width: 20em) {
+          //Less than 320px
+        }
+        @media (min-width: 43.75em) {
+          //700px
+          font-size: 1.2rem;
+        }
+        @media (min-width: 62em) {
+          //992px
+          font-size: 1.3rem;
+        }
+        @media (min-width: 83em) {
+          //1392
+          // font-size: 1.875rem;
+        }
       }
     }
   }
@@ -106,16 +102,16 @@ $ff-logo: "Luckiest Guy", cursive;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1.375rem;
       width: 40.381rem;
-      height: 64.821rem;
+      height: auto;
     }
 
     @media (min-width: 83em) {
       //1392
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1.813rem;
-      padding: 3rem 0;
-      width: 40.381rem;
-      height: 84.821rem;
+      padding: 0;
+      width: 100%;
+      height: auto;
       // background-color: white;
     }
   }
@@ -124,9 +120,6 @@ $ff-logo: "Luckiest Guy", cursive;
     box-sizing: border-box;
     border-radius: 15px;
     padding: 1rem 0;
-    &:hover {
-      border: 1px solid #e0e0e0;
-    }
 
     @media (min-width: 43.75em) {
       //700px
@@ -147,6 +140,10 @@ $ff-logo: "Luckiest Guy", cursive;
       //1392
       width: 23.313rem;
       height: 22.716rem;
+      &:hover {
+        border: 1px solid #cdcdcd;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+      }
     }
     &--images {
       display: block;
@@ -195,7 +192,7 @@ $ff-logo: "Luckiest Guy", cursive;
       }
       @media (min-width: 83em) {
         //1392
-        font-size: 2.25rem;
+        font-size: 2rem;
         padding-top: 0.5rem;
         padding-bottom: 1rem;
       }
