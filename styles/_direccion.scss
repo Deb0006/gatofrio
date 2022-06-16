@@ -143,6 +143,10 @@ $ff-logo: "Luckiest Guy", cursive;
       @media (min-width: 43.75em) {
         //700px
         border-radius: 350px;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
       }
       @media (min-width: 62em) {
         //992px

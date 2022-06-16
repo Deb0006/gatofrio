@@ -874,6 +874,9 @@
 @media (min-width: 43.75em) {
   .addresses__bottom--map iframe {
     border-radius: 350px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 }
 
