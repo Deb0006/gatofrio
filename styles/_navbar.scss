@@ -75,6 +75,7 @@ $ff-logo: "Luckiest Guy", cursive;
     grid-row-start: 2;
     border-top: 1px solid #f3f3f3;
     border-bottom: 1px solid #f3f3f3;
+    animation: 300ms animationNavbar ease-in;
 
     @media (min-width: 62em) {
       //992px
@@ -119,3 +120,16 @@ $ff-logo: "Luckiest Guy", cursive;
     }
   }
 }
+
+  @keyframes animationNavbar {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
