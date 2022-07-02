@@ -105,12 +105,15 @@ $ff-logo: "Luckiest Guy", cursive;
       @media (min-width: 62em) {
         //992px
         font-size: 1.3rem;
+        transition: transform 0.25s;
+        transform: scale(0.95);
         &:hover {
           display: grid;
           place-content: center;
           background: #00a6a6;
           border-radius: 24.5px;
           color: white;
+          transform: scale(1.01);
         }
       }
       @media (min-width: 83em) {

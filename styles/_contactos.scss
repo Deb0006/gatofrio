@@ -50,7 +50,23 @@ $ff-logo: "Luckiest Guy", cursive;
         width: 2.5rem;
         height: 2.5rem;
         cursor: pointer;
+        transition: transform 0.2s;
+        &:hover {
+          transform: scale(1.1);
+        }
+
       }
+    }
+    &--copyright{
+      color: rgb(2, 2, 2);
+      font-family: $ff-text;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.7rem;
+      line-height: 2;
+      text-align: center;
+      padding-top: 1rem;
+
     }
   }
 }

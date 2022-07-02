@@ -96,6 +96,8 @@
 @media (min-width: 62em) {
   .navbar__options a {
     font-size: 1.3rem;
+    transition: transform 0.25s;
+    transform: scale(0.95);
   }
   .navbar__options a:hover {
     display: grid;
@@ -103,6 +105,7 @@
     background: #00a6a6;
     border-radius: 24.5px;
     color: white;
+    transform: scale(1.01);
   }
 }
 @media (min-width: 83em) {
@@ -829,6 +832,20 @@
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.contactos__wrapper--icons-img:hover {
+  transform: scale(1.1);
+}
+.contactos__wrapper--copyright {
+  color: rgb(2, 2, 2);
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 2;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 html {
