@@ -866,8 +866,36 @@ html html {
 .wrapper {
   margin: 0;
   padding: 0;
+  -webkit-animation: 700ms pageLoad ease-in;
+          animation: 700ms pageLoad ease-in;
 }
 
 body {
   margin: 0;
+}
+
+@-webkit-keyframes pageLoad {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pageLoad {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -25,11 +25,25 @@ html {
 .wrapper {
   margin: 0;
   padding: 0;
-  // background-image:url(../images/Vector12.svg), url(../images/Vector13.svg);
-  // background-repeat: no-repeat;
-  // background-size: 65%;
-  // background-position: -100% 45%, 190% 55%;
+  animation: 700ms pageLoad ease-in;
+
 }
 body {
   margin: 0;
+}
+
+.animation {
+
+  @keyframes pageLoad {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
