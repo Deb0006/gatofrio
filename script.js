@@ -9,6 +9,8 @@ const imgProduct = document.querySelector(".container__img--image");
 const nameProduct = document.querySelector(".container__text--name");
 const descProduct = document.querySelector(".container__text--description");
 
+document.addEventListener("touchstart", onTouchStart, { passive: true });
+
 function loadModal(itemMenu) {
   const img = itemMenu.querySelector(".menu__container--images").src;
   const name = itemMenu.querySelector(".menu__container--name").innerText;
