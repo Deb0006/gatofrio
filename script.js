@@ -23,7 +23,6 @@ imgButton.forEach((img) => {
     modal.style.display = "grid";
     modal.classList.add("active");
     overlay.classList.add("active");
-    // modal.classList.remove("inactive");
   });
 });
 
@@ -48,9 +47,3 @@ navbarBtn.addEventListener("click", () => {
     ? (navbarOptions.style.display = "grid")
     : (navbarOptions.style.display = "none");
 });
-
-// if (window.matchMedia("(min-width: 43.75em)").matches) {
-//   navbarOptions.style.display = "grid";
-//   console.log("matched");
-// }
-/* the viewport is at least 400 pixels wide */
