@@ -40,9 +40,8 @@ overlay.addEventListener("click", () => {
 });
 
 // navbar hamburguer click
-navbarOptions.style.display = "none";
 navbarBtn.addEventListener("click", () => {
-  navbarOptions.style.display === "none"
-    ? (navbarOptions.style.display = "grid")
-    : (navbarOptions.style.display = "none");
+  navbarOptions.style.display === "grid"
+    ? (navbarOptions.style.display = "none")
+    : (navbarOptions.style.display = "grid");
 });

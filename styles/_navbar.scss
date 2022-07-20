@@ -69,7 +69,6 @@ $ff-logo: "Luckiest Guy", cursive;
   }
 
   &__options {
-    display: none;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     grid-row-start: 2;
@@ -90,6 +89,7 @@ $ff-logo: "Luckiest Guy", cursive;
     }
     @media (min-width: 83em) {
       //1392
+      display: grid !important;
     }
     a {
       color: $text-gray;
