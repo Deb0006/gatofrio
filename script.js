@@ -9,8 +9,10 @@ const imgProduct = document.querySelector(".container__img--image");
 const nameProduct = document.querySelector(".container__text--name");
 const descProduct = document.querySelector(".container__text--description");
 
-// document.addEventListener("touchstart", onTouchStart, { passive: true });
+const navbarOptions = document.querySelector(".navbar__options");
+const navbarBtn = document.querySelector(".navbar__logo--hamburguer");
 
+//Modal menu
 function loadModal(itemMenu) {
   const img = itemMenu.querySelector(".menu__container--images").src;
   const name = itemMenu.querySelector(".menu__container--name").innerText;
@@ -37,14 +39,9 @@ overlay.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
-// navbar hamburguer
-
-const navbarOptions = document.querySelector(".navbar__options");
-const navbarBtn = document.querySelector(".navbar__logo--hamburguer");
-
-// navbarOptions.style.display = "none";
+// navbar hamburguer click
+navbarOptions.style.display = "none";
 navbarBtn.addEventListener("click", () => {
-  // console.log(navbarOptions.style.display);
   navbarOptions.style.display === "none"
     ? (navbarOptions.style.display = "grid")
     : (navbarOptions.style.display = "none");
