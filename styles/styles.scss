@@ -26,14 +26,12 @@ html {
   margin: 0;
   padding: 0;
   animation: 700ms pageLoad ease-in;
-
 }
 body {
   margin: 0;
 }
 
 .animation {
-
   @keyframes pageLoad {
     0% {
       visibility: hidden;

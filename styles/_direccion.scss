@@ -17,19 +17,11 @@ $ff-logo: "Luckiest Guy", cursive;
     max-width: 72rem;
     margin: 0 auto;
     display: flex;
-    // align-content: center;
-    // justify-content: center;
     flex-wrap: wrap;
   }
 
   &__top {
-    // border-top: 1px solid #ededed;
-    // border-bottom: 1px solid #ededed;
-    // background-color: white;
-    // box-shadow: 0px 8px 8px -9px rgba(0, 0, 0, 0.23);
-    // width: 100%;
     padding: 1.5rem 2rem 1rem 2rem;
-    // justify-content: flex-start;
 
     &--title {
       width: 100%;
@@ -48,16 +40,13 @@ $ff-logo: "Luckiest Guy", cursive;
       }
       @media (min-width: 62em) {
         //992px
-        // line-height: 65px;
         padding: 1.5rem;
       }
       @media (min-width: 83em) {
         //1392
-        // font-size: 3rem;
       }
     }
     span {
-      // padding-left: 0.5rem;
       display: inline;
       font-size: 0.875rem; //14px
       font-weight: 400;
@@ -69,8 +58,6 @@ $ff-logo: "Luckiest Guy", cursive;
       }
       @media (min-width: 43.75em) {
         //700px
-
-        // padding-left: 0.5rem;
         font-size: 1.2rem;
       }
       @media (min-width: 62em) {
@@ -80,7 +67,6 @@ $ff-logo: "Luckiest Guy", cursive;
       }
       @media (min-width: 83em) {
         //1392
-        // font-size: 3rem;
       }
     }
   }
@@ -113,7 +99,6 @@ $ff-logo: "Luckiest Guy", cursive;
       padding: 1rem 0;
 
       @media (max-width: 20em) {
-        //Less than 320px
         width: 100%;
       }
       @media (min-width: 43.75em) {
@@ -128,7 +113,6 @@ $ff-logo: "Luckiest Guy", cursive;
       @media (min-width: 83em) {
         //1392
         width: 45%;
-        // padding-right: 2rem;
       }
     }
     &--map iframe {
@@ -136,7 +120,6 @@ $ff-logo: "Luckiest Guy", cursive;
       height: 350px;
       border: 0;
       @media (max-width: 20em) {
-        //Less than 320px
         width: 100%;
         height: 250px;
       }
@@ -174,7 +157,6 @@ $ff-logo: "Luckiest Guy", cursive;
       line-height: 2;
       text-align: left;
       @media (max-width: 20em) {
-        //Less than 320px
         line-height: 1.5;
         width: 90%;
       }
@@ -190,7 +172,6 @@ $ff-logo: "Luckiest Guy", cursive;
       }
       @media (min-width: 83em) {
         //1392
-        // padding: 3rem ;
         font-size: 1.75rem;
       }
     }

@@ -32,12 +32,10 @@ $ff-logo: "Luckiest Guy", cursive;
       }
       @media (min-width: 62em) {
         //992px
-        // line-height: 65px;
         padding: 2rem;
       }
       @media (min-width: 83em) {
         //1392
-        // font-size: 3rem;
       }
     }
     &--icons {
@@ -54,10 +52,9 @@ $ff-logo: "Luckiest Guy", cursive;
         &:hover {
           transform: scale(1.1);
         }
-
       }
     }
-    &--copyright{
+    &--copyright {
       color: rgb(2, 2, 2);
       font-family: $ff-text;
       font-style: normal;
@@ -66,7 +63,6 @@ $ff-logo: "Luckiest Guy", cursive;
       line-height: 2;
       text-align: center;
       padding-top: 1rem;
-
     }
   }
 }

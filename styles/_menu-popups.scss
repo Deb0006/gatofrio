@@ -13,7 +13,7 @@ $ff-logo: "Luckiest Guy", cursive;
   transition: 400ms ease-in-out;
   place-content: center;
   z-index: 10;
-  animation: 400ms opacityAnimationOut ease-out;//to be tested*
+  animation: 400ms opacityAnimationOut ease-out; //to be tested*
   @media (max-width: 20em) {
     //px 320
   }
@@ -73,7 +73,7 @@ $ff-logo: "Luckiest Guy", cursive;
     cursor: pointer;
     grid-column: 3/4;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     border: none;
     outline: none;
     background: none;
