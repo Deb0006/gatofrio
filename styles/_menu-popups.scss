@@ -41,8 +41,8 @@ $ff-logo: "Luckiest Guy", cursive;
   z-index: 111;
   margin: 0 auto;
   min-width: 50%;
-  width: 80%;
-  height: 100%;
+  width: 16rem; //256px
+  height: auto;
   padding: 0.5rem;
   display: grid;
   grid-template-columns: 6.5% 1fr 6.5%;
@@ -53,16 +53,17 @@ $ff-logo: "Luckiest Guy", cursive;
   @media (max-width: 20em) {
     //px 320
     width: 80%;
+    height: 100%;
   }
 
   @media (min-width: 43.75em) {
-    width: 50%;
     //700px
+    width: 21.875rem; //350px
   }
 
   @media (min-width: 62em) {
     //992px
-    width: 60%;
+    width: 23.125rem; //370px
     max-width: 661px;
   }
 

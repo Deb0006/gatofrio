@@ -584,8 +584,8 @@
   z-index: 111;
   margin: 0 auto;
   min-width: 50%;
-  width: 80%;
-  height: 100%;
+  width: 16rem;
+  height: auto;
   padding: 0.5rem;
   display: -ms-grid;
   display: grid;
@@ -602,18 +602,19 @@
 @media (max-width: 20em) {
   .container {
     width: 80%;
+    height: 100%;
   }
 }
 
 @media (min-width: 43.75em) {
   .container {
-    width: 50%;
+    width: 21.875rem;
   }
 }
 
 @media (min-width: 62em) {
   .container {
-    width: 60%;
+    width: 23.125rem;
     max-width: 661px;
   }
 }
