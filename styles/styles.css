@@ -583,6 +583,7 @@
 .container {
   z-index: 111;
   margin: 0 auto;
+  min-width: 50%;
   width: 80%;
   height: 100%;
   padding: 0.5rem;
@@ -606,12 +607,13 @@
 
 @media (min-width: 43.75em) {
   .container {
-    width: 60%;
+    width: 50%;
   }
 }
 
 @media (min-width: 62em) {
   .container {
+    width: 60%;
     max-width: 661px;
   }
 }
