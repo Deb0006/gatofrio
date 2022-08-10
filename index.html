@@ -59,11 +59,20 @@
           >
         </div>
         <div class="welcome__image">
-          <img
+          <!-- <img
             class="welcome__image--hero-img"
             src="images/ice-cream2.webp"
             alt="imagen de helado"
-          />
+          /> -->
+          <picture>
+            <source srcset="images/ice-cream2.webp" type="image/webp" />
+            <source srcset="images/ice-cream2.png" type="image/png" />
+            <img
+              src="images/ice-cream2.png"
+              alt="imagen de helado"
+              class="welcome__image--hero-img"
+            />
+          </picture>
         </div>
       </section>
       <!--Menu Section-->
