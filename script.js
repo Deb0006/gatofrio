@@ -40,7 +40,6 @@ overlay.addEventListener("click", () => {
 });
 
 // navbar hamburguer click
-
 navbarBtn.addEventListener("click", () => {
   navbarOptions.style.display === "grid"
     ? (navbarOptions.style.display = "none")
