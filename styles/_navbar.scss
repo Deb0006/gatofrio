@@ -33,7 +33,8 @@ $ff-logo: "Luckiest Guy", cursive;
     @media (min-width: 62em) {
       //992px
       font-size: 3rem;
-      place-items: center start;
+      justify-items: flex-start;
+      align-items: center;
     }
     &--hamburguer {
       display: block;
@@ -78,7 +79,7 @@ $ff-logo: "Luckiest Guy", cursive;
       //992px
       border: none;
       box-shadow: none;
-      display: grid;
+      display: grid !important;
       grid-template-columns: 1fr 1fr 1fr;
       place-items: center;
       gap: 0.5rem;
