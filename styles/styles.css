@@ -268,7 +268,7 @@
   font-weight: 700;
 }
 
-.welcome__message a {
+.welcome__message p {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -276,7 +276,7 @@
   color: #484848;
 }
 
-.welcome__message a span {
+.welcome__message p span {
   font-weight: 600;
 }
 
@@ -284,7 +284,7 @@
   .welcome__message h1 {
     font-size: 7.22vw;
   }
-  .welcome__message a {
+  .welcome__message p {
     font-size: 1.3rem;
   }
 }
@@ -293,7 +293,7 @@
   .welcome__message h1 {
     font-size: 5vw;
   }
-  .welcome__message a {
+  .welcome__message p {
     font-size: 1.5rem;
   }
 }
