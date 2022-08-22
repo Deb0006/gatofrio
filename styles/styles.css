@@ -1101,6 +1101,12 @@ body {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
   }
+  10% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
   100% {
     visibility: visible;
     opacity: 1;
@@ -1111,6 +1117,12 @@ body {
 
 @keyframes pageLoad {
   0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  10% {
     visibility: hidden;
     opacity: 0;
     -webkit-transform: translateY(-5px);
