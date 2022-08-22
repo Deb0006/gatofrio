@@ -498,7 +498,6 @@
 
 @media (min-width: 43.75em) {
   .menu__container--images {
-    width: 80%;
     width: 16.459rem;
     height: 15.33rem;
   }
@@ -553,7 +552,9 @@
 
 .popup-images {
   position: fixed;
+  place-content: center;
   display: none;
+  z-index: 10;
   top: 50%;
   left: 50%;
   width: 100%;
@@ -562,8 +563,6 @@
           transform: translate(-50%, -50%) scale(0);
   -webkit-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out;
-  place-content: center;
-  z-index: 10;
   -webkit-animation: 400ms opacityAnimationOut ease-out;
           animation: 400ms opacityAnimationOut ease-out;
 }
@@ -739,6 +738,9 @@
   0% {
     opacity: 0;
   }
+  50% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
@@ -746,6 +748,9 @@
 
 @keyframes opacityAnimationIn {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -757,6 +762,9 @@
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 1;
+  }
   100% {
     opacity: 0;
   }
@@ -764,6 +772,9 @@
 
 @keyframes opacityAnimationOut {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 1;
   }
   100% {
