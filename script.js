@@ -15,8 +15,8 @@ const navbarBtn = document.querySelector(".navbar__logo--hamburguer");
 //Modal menu
 function loadModal(itemMenu) {
   const img = itemMenu.querySelector(".menu__container--images").src;
-  const name = itemMenu.querySelector(".menu__container--name").innerText;
   imgProduct.src = img;
+  const name = itemMenu.querySelector(".menu__container--name").innerText;
   nameProduct.innerText = name;
   descProduct.innerText = menuObj[name];
 }
