@@ -23,7 +23,7 @@
   &__logo {
     width: 100%;
     display: grid;
-    grid-template-columns: 15% 65% 15%;
+    grid-template-columns: 15% 70% 15%;
     place-items: center;
 
     @media (min-width: 62em) {
@@ -32,25 +32,16 @@
       justify-items: flex-start;
       align-items: center;
     }
-    &--hamburguer {
-      display: block;
-      width: 32px;
-      height: 18.9px;
-      @media (min-width: 62em) {
-        //992px
-        display: none;
-      }
-    }
+
     &--name {
-      // display: block;
+      grid-row-start: 1;
+      grid-column-start: 2;
       color: $blue-title;
       font-family: $ff-logo;
       font-style: normal;
       font-weight: 400;
       font-size: 32px;
       line-height: 32px;
-      // position: absolute;
-      // z-index: 1;
       @media (min-width: 43.75em) {
         //700px
         font-size: 2.5rem;
@@ -62,8 +53,49 @@
         font-size: 3rem;
       }
     }
+    &--hamburger {
+      cursor: pointer;
+      grid-column-start: 3;
+
+      @media (min-width: 62em) {
+        //992px
+        display: none;
+      }
+    }
+  }
+  // hamburger icon and bars
+  &--hamburger,
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: $dark-blue;
+    margin: 6px 0;
+    transition: 0.4s ease-in-out;
+    @media (min-width: 62em) {
+      //992px
+      display: none;
+    }
+  }
+  &--hamburger,
+  .change .bar1 {
+    background-color: $blue-title;
+    transform: translate(0, 10px) rotate(-45deg);
+  }
+  &--hamburger,
+  .change .bar2 {
+    background-color: $blue-title;
+    opacity: 0;
+  }
+  &--hamburger,
+  .change .bar3 {
+    background-color: $blue-title;
+    transform: translate(0, -10px) rotate(45deg);
   }
 
+  // links under navbar
   &__options {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;

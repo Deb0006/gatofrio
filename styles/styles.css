@@ -29,8 +29,8 @@
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% 65% 15%;
-      grid-template-columns: 15% 65% 15%;
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
   place-items: center;
 }
 
@@ -44,19 +44,11 @@
   }
 }
 
-.navbar__logo--hamburguer {
-  display: block;
-  width: 32px;
-  height: 18.9px;
-}
-
-@media (min-width: 62em) {
-  .navbar__logo--hamburguer {
-    display: none;
-  }
-}
-
 .navbar__logo--name {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   color: #0495b2;
   font-family: "Luckiest Guy", cursive;
   font-style: normal;
@@ -77,6 +69,60 @@
     padding-top: 0.6rem;
     font-size: 3rem;
   }
+}
+
+.navbar__logo--hamburger {
+  cursor: pointer;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+@media (min-width: 62em) {
+  .navbar__logo--hamburger {
+    display: none;
+  }
+}
+
+.navbar--hamburger,
+.navbar .bar1,
+.navbar .bar2,
+.navbar .bar3 {
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #145364;
+  margin: 6px 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+@media (min-width: 62em) {
+  .navbar--hamburger,
+  .navbar .bar1,
+  .navbar .bar2,
+  .navbar .bar3 {
+    display: none;
+  }
+}
+
+.navbar--hamburger,
+.navbar .change .bar1 {
+  background-color: #0495b2;
+  -webkit-transform: translate(0, 10px) rotate(-45deg);
+          transform: translate(0, 10px) rotate(-45deg);
+}
+
+.navbar--hamburger,
+.navbar .change .bar2 {
+  background-color: #0495b2;
+  opacity: 0;
+}
+
+.navbar--hamburger,
+.navbar .change .bar3 {
+  background-color: #0495b2;
+  -webkit-transform: translate(0, -10px) rotate(45deg);
+          transform: translate(0, -10px) rotate(45deg);
 }
 
 .navbar__options {
@@ -625,13 +671,13 @@
   border: none;
   outline: none;
   background: none;
-  color: #00a5d9;
+  color: #07a3d3;
   width: 100%;
   height: 100%;
 }
 
 .container__button:hover {
-  color: #e78c03;
+  color: #fd703b;
 }
 
 .container__img {
@@ -669,7 +715,7 @@
   line-height: 19px;
   letter-spacing: -0.04em;
   font-size: 1.3rem;
-  color: #00a5d9;
+  color: #07a3d3;
 }
 
 @media (min-width: 43.75em) {

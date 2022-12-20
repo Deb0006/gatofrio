@@ -10,7 +10,7 @@ const nameProduct = document.querySelector(".container__text--name");
 const descProduct = document.querySelector(".container__text--description");
 
 const navbarOptions = document.querySelector(".navbar__options");
-const navbarBtn = document.querySelector(".navbar__logo--hamburguer");
+const navbarBtn = document.querySelector(".navbar__logo--hamburger");
 
 //Modal menu
 function loadModal(itemMenu) {
@@ -41,7 +41,12 @@ overlay.addEventListener("click", () => {
 
 // navbar hamburguer click
 navbarBtn.addEventListener("click", () => {
+  // show or hide links
   navbarOptions.style.display === "grid"
     ? (navbarOptions.style.display = "none")
     : (navbarOptions.style.display = "grid");
+  // animate hamburger
+  navbarBtn.classList.contains("change")
+    ? navbarBtn.classList.remove("change")
+    : navbarBtn.classList.add("change");
 });
