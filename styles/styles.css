@@ -51,7 +51,6 @@
       grid-column-start: 2;
   color: #0495b2;
   font-family: "Luckiest Guy", cursive;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 32px;
@@ -92,8 +91,8 @@
   border-radius: 5px;
   background-color: #145364;
   margin: 6px 0;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 @media (min-width: 62em) {
@@ -164,7 +163,6 @@
 
 .navbar__options a {
   color: #484848;
-  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -300,8 +298,6 @@
 }
 
 .welcome__message h1 {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 26px;
   line-height: 1.3em;
@@ -315,10 +311,8 @@
 }
 
 .welcome__message p {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 13.5px;
+  font-size: 14px;
   color: #484848;
 }
 
@@ -403,28 +397,26 @@
 .menu__title--text {
   width: 85%;
   color: #07a3d3;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: -0.01em;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 43.75em) {
   .menu__title--text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 62em) {
   .menu__title--text {
     padding: 1.5rem;
+    font-size: 2rem;
   }
 }
 
 .menu__title--text span {
   display: inline;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
   padding-left: 0.1rem;
   color: #6c6c6c;
@@ -564,10 +556,8 @@
 
 .menu__container--name {
   color: #6c6c6c;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 19px;
   letter-spacing: -0.015em;
 }
@@ -627,7 +617,6 @@
   margin: 0 auto;
   min-width: 50%;
   width: 16rem;
-  height: auto;
   padding: 0.5rem;
   display: -ms-grid;
   display: grid;
@@ -644,7 +633,6 @@
 @media (max-width: 20em) {
   .container {
     width: 80%;
-    height: 100%;
   }
 }
 
@@ -709,8 +697,6 @@
 }
 
 .container__text--name {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: -0.04em;
@@ -731,12 +717,10 @@
 }
 
 .container__text--description {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 0.938rem;
   line-height: 120.5%;
-  color: #696969;
+  color: #6c6c6c;
   padding: 5%;
 }
 
@@ -840,44 +824,36 @@
   width: 80%;
   max-width: 72rem;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .addresses__top {
-  padding: 1.5rem 0 1rem 0;
+  padding: 1.5rem 0;
 }
 
 .addresses__top--title {
   width: 85%;
   color: #07a3d3;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 22px;
-  letter-spacing: -0.01em;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 43.75em) {
   .addresses__top--title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 62em) {
   .addresses__top--title {
+    font-size: 2rem;
     padding: 1.5rem;
   }
 }
 
 .addresses__top span {
-  display: inline;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
-  padding-left: 0.5rem;
+  padding-left: 0.1rem;
   color: #6c6c6c;
 }
 
@@ -895,6 +871,11 @@
 }
 
 .addresses__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #e6f4f7;
   border: 1px solid rgba(205, 205, 205, 0.09);
   border-radius: 20px;
@@ -993,8 +974,6 @@
   padding: 2rem 0 2rem 3.5rem;
   color: #444444;
   list-style-type: none;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 2;
@@ -1059,7 +1038,6 @@
   text-align: center;
   padding-bottom: 1.5rem;
   color: white;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 22px;
@@ -1084,8 +1062,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -1108,8 +1084,6 @@
 
 .contactos__wrapper--copyright {
   color: #020202;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 0.7rem;
   line-height: 2;
@@ -1120,10 +1094,8 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-html html {
   font-family: "Open Sans", sans-serif;
+  font-style: normal;
 }
 
 *,

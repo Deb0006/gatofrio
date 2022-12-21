@@ -14,7 +14,6 @@
       text-align: center;
       padding-bottom: 1.5rem;
       color: white;
-      font-family: $ff-text;
       font-weight: 700;
       font-size: 1rem;
       line-height: 22px;
@@ -37,7 +36,6 @@
     &--icons {
       display: flex;
       flex-wrap: wrap;
-      align-content: center;
       justify-content: space-evenly;
 
       &-img {
@@ -52,8 +50,7 @@
     }
     &--copyright {
       color: rgb(2, 2, 2);
-      font-family: $ff-text;
-      font-style: normal;
+
       font-weight: 600;
       font-size: 0.7rem;
       line-height: 2;

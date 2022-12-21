@@ -10,21 +10,6 @@
   transform: translate(-50%, -50%) scale(0);
   transition: 400ms ease-in-out;
   animation: 400ms opacityAnimationOut ease-out;
-  @media (max-width: 20em) {
-    //px 320
-  }
-
-  @media (min-width: 43.75em) {
-    //700px
-  }
-
-  @media (min-width: 62em) {
-    //992px
-  }
-
-  @media (min-width: 83em) {
-    //1392px
-  }
 }
 .popup-images.active {
   display: grid;
@@ -38,7 +23,6 @@
   margin: 0 auto;
   min-width: 50%;
   width: 16rem; //256px
-  height: auto;
   padding: 0.5rem;
   display: grid;
   grid-template-columns: 6.5% 1fr 6.5%;
@@ -49,7 +33,6 @@
   @media (max-width: 20em) {
     //px 320
     width: 80%;
-    height: 100%;
   }
 
   @media (min-width: 43.75em) {
@@ -63,11 +46,6 @@
     max-width: 661px;
   }
 
-  @media (min-width: 83em) {
-    //1392px
-    // max-height: 590px;
-  }
-
   &__button {
     cursor: pointer;
     grid-column: 3/4;
@@ -76,11 +54,11 @@
     border: none;
     outline: none;
     background: none;
-    color: #00a5d9;
+    color: $light-blue;
     width: 100%;
     height: 100%;
     &:hover {
-      color: #e78c03;
+      color: $orange;
     }
   }
   &__img {
@@ -105,13 +83,11 @@
     padding-bottom: 5%;
 
     &--name {
-      font-family: $ff-text;
-      font-style: normal;
       font-weight: 700;
       line-height: 19px;
       letter-spacing: -0.04em;
       font-size: 1.3rem;
-      color: #00a5d9;
+      color: $light-blue;
 
       @media (min-width: 43.75em) {
         font-size: 1.5rem;
@@ -128,20 +104,14 @@
       }
     }
     &--description {
-      font-family: $ff-text;
-      font-style: normal;
       font-weight: 400;
       font-size: 0.938rem; //14px
       line-height: 120.5%;
-      color: #696969;
+      color: $light-gray;
       padding: 5%;
       @media (min-width: 43.75em) {
         font-size: 1.125rem;
         //700px
-      }
-
-      @media (min-width: 62em) {
-        //992px
       }
 
       @media (min-width: 83em) {
