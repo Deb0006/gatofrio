@@ -54,6 +54,8 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 32px;
+  -webkit-animation: 2s animationLogoName ease-in;
+          animation: 2s animationLogoName ease-in;
 }
 
 @media (min-width: 43.75em) {
@@ -67,6 +69,8 @@
     grid-column: span 3;
     padding-top: 0.6rem;
     font-size: 3rem;
+    -webkit-animation: 200ms animationLogoName ease-in-out;
+            animation: 200ms animationLogoName ease-in-out;
   }
 }
 
@@ -90,7 +94,7 @@
   height: 4px;
   border-radius: 5px;
   background-color: #145364;
-  margin: 6px 0;
+  margin: 4px 0;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
@@ -107,8 +111,8 @@
 .navbar--hamburger,
 .navbar .change .bar1 {
   background-color: #0495b2;
-  -webkit-transform: translate(0, 10px) rotate(-45deg);
-          transform: translate(0, 10px) rotate(-45deg);
+  -webkit-transform: translate(0, 8px) rotate(-45deg);
+          transform: translate(0, 8px) rotate(-45deg);
 }
 
 .navbar--hamburger,
@@ -120,8 +124,8 @@
 .navbar--hamburger,
 .navbar .change .bar3 {
   background-color: #0495b2;
-  -webkit-transform: translate(0, -10px) rotate(45deg);
-          transform: translate(0, -10px) rotate(45deg);
+  -webkit-transform: translate(0, -8px) rotate(45deg);
+          transform: translate(0, -8px) rotate(45deg);
 }
 
 .navbar__options {
@@ -231,6 +235,36 @@
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes animationLogoName {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  25% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes animationLogoName {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  25% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -1046,12 +1080,13 @@
 
 @media (min-width: 43.75em) {
   .contactos__wrapper--title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 62em) {
   .contactos__wrapper--title {
+    font-size: 2rem;
     padding: 2rem;
   }
 }
@@ -1122,14 +1157,12 @@ body {
   0% {
     visibility: hidden;
     opacity: 0;
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   10% {
     visibility: hidden;
     opacity: 0;
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
   }
   100% {
     visibility: visible;
@@ -1143,14 +1176,12 @@ body {
   0% {
     visibility: hidden;
     opacity: 0;
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   10% {
     visibility: hidden;
     opacity: 0;
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
   }
   100% {
     visibility: visible;
