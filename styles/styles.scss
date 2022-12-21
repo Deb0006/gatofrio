@@ -34,12 +34,11 @@ body {
     0% {
       visibility: hidden;
       opacity: 0;
-      transform: translateY(-5px);
+      transform: translateY(-10px);
     }
     10% {
       visibility: hidden;
       opacity: 0;
-      transform: translateY(-5px);
     }
     100% {
       visibility: visible;
