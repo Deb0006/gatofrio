@@ -14,8 +14,20 @@ const navbarBtn = document.querySelector(".navbar__logo--hamburger");
 
 //Modal menu
 function loadModal(itemMenu) {
-  const img = itemMenu.querySelector(".menu__container--images").src;
-  imgProduct.src = img;
+  if (typeof HTMLPictureElement !== "undefined") {
+    // Use webp image
+    var picture = itemMenu.querySelector("picture");
+    var webpSource = picture.querySelector("source[type='image/webp']");
+    var webpUrl = webpSource.getAttribute("srcset");
+    imgProduct.src = webpUrl;
+  } else {
+    // Use png or jpg image
+    var picture = itemMenu.querySelector("picture");
+    var webpSource = picture.querySelector("source[type='image/webp']");
+    var pngUrl = picture.querySelector("img").getAttribute("src");
+    imgProduct.src = pngUrl;
+  }
+
   const name = itemMenu.querySelector(".menu__container--name").innerText;
   nameProduct.innerText = name;
   descProduct.innerText = menuObj[name];
