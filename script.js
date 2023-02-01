@@ -52,11 +52,7 @@ overlay.addEventListener("click", () => {
 // navbar hamburguer click
 navbarBtn.addEventListener("click", () => {
   // show or hide links
-  navbarOptions.style.display === "grid"
-    ? (navbarOptions.style.display = "none")
-    : (navbarOptions.style.display = "grid");
-  // animate hamburger
-  navbarBtn.classList.contains("change")
-    ? navbarBtn.classList.remove("change")
-    : navbarBtn.classList.add("change");
+  navbarOptions.style.display =
+    navbarOptions.style.display === "grid" ? "none" : "grid";
+  navbarBtn.classList.toggle("change");
 });

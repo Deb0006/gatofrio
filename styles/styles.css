@@ -391,6 +391,7 @@
   display: block;
   margin: 0 auto;
   width: 41vw;
+  height: auto;
 }
 
 @media (min-width: 37.5em) {
